@@ -1,0 +1,40 @@
+name: DVC snapshot status (no-cred)
+
+on:
+  schedule:
+    # Daily at 06:00 UTC. Reports which datasets are due; doesn't
+    # actually snapshot (the real snapshot runs on the cron host with
+    # the B2 credentials).
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install DVC
+        run: pip install "dvc[s3]==3.67.1"
+
+      - name: Dry-run snapshot
+        # dry-run doesn't actually push; it just decides what *would* be
+        # snapshotted. So no creds are needed in CI.
+        run: |
+          python3 _scripts/snapshot.py --dry-run || true
+
+      - name: List datasets overdue for snapshot
+        if: always()
+        run: |
+          echo "## Snapshot status" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Run the actual snapshot on the cron host with:" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          echo "python3 _scripts/snapshot.py" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "See docs/CONCERNS.md for the cron host location." >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Data — see DECISIONS.md ADR-002 and ADR-004
+# We DO commit small raw files in datasets/<slug>/raw/ for reproducibility.
+# We do NOT commit large dumps.
+_snapshots/
+*.zip
+*.tar.gz
+*.7z
+# Uncomment to ignore large raw files globally — better: per-folder .gitignore
+# datasets/*/raw/*.csv
+# datasets/*/raw/*.parquet
+
+# Generated / build artifacts
+*.duckdb
+*.db
+*.sqlite
+*.sqlite3
+catalog/datasets.json
+
+# Secrets
+.env
+.env.*
+!.env.example
+**/secrets/
+**/*credentials*
+# DVC env files (see _scripts/dvc.env.example for the template)
+# Real file lives at /etc/dvc-env or wherever DVC_ENV_FILE points
+**/dvc.env
+**/dvc-env
+!_scripts/dvc.env.example
+
+# DVC internals (cache + tmp dirs, not pointer files)
+.dvc/cache/
+.dvc/tmp/
+.dvc/lock
+
+# Snapshot staging area (prior-snapshot copies used by the
+# superset check in _scripts/snapshot.py)
+_scripts/.prior-snapshot/
+
+# OS
+Thumbs.db
+
+# Local overrides
+.envrc

@@ -1,0 +1,3 @@
+# Raw data is large — see SOURCE.md for snapshot details
+*.csv
+!SOURCE.md

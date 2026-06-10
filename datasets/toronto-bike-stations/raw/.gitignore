@@ -1,0 +1,4 @@
+# Raw data is large (typically). For this demo the file is small
+# and committed; for a real snapshot of a large dataset, this
+# gitignore would exclude the .csv and only the .dvc pointer would
+# be committed. We commit both here for clarity.

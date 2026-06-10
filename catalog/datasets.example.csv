@@ -1,0 +1,3 @@
+id,name,source,source_id,url,api_url,license,format,tags,refresh_frequency,last_fetched,last_verified,size_mb,data_storage,status,added_by,added_on,superseded_by,notes
+your-slug-here,Your Dataset Name,toronto,upstream-package-id,https://open.toronto.ca/dataset/your-dataset,,ODC-BY,csv,"tag1,tag2",monthly,,,1,git,draft,github-user,2026-06-08,,One-line description.
+your-slug-dvc,Large Dataset (DVC example),toronto,another-package-id,https://open.toronto.ca/dataset/large-dataset,,ODC-BY,csv,"tag1,tag2",monthly,2026-06-10,2026-06-10,500,dvc,active,github-user,2026-06-10,,Tracked in B2 via DVC.

@@ -1,0 +1,46 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Validate catalog
+        run: python _scripts/validate.py --csv-lint
+
+      - name: Lint Python
+        run: ruff check _scripts/ datasets/ tests/
+
+      - name: Run tests
+        run: python -m pytest tests/ -v
+
+      - name: Check folder ⇄ CSV consistency
+        run: python _scripts/validate.py --check-folders
+
+      - name: Enforce raw/ is read-only
+        run: |
+          # Fail if any PR touches files under datasets/*/raw/ except SOURCE.md and .gitignore
+          if git diff --name-only origin/main...HEAD | grep -P '^datasets/[^/]+/raw/(?!SOURCE\.md|\.gitignore)' ; then
+            echo "ERROR: Files under raw/ are immutable (ADR-004). Only SOURCE.md and .gitignore may change."
+            echo "If you need to update raw data, create a new snapshot folder or use dvc add."
+            exit 1
+          fi
+
+      - name: HEAD-check URLs (samples)
+        run: python _scripts/validate.py --check-urls --max-urls 25
+        continue-on-error: true  # external network can be flaky; surface failures without blocking

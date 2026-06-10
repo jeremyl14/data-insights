@@ -1,0 +1,38 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.13
+    hooks:
+      - id: ruff
+        args: [--fix]
+        types_or: [python]
+      - id: ruff-format
+        types_or: [python]
+
+  - repo: local
+    hooks:
+      - id: validate-catalog
+        name: Validate catalog
+        entry: python _scripts/validate.py --csv-lint
+        language: system
+        pass_filenames: false
+        always_run: true
+
+      - id: validate-folders
+        name: Check folder consistency
+        entry: python _scripts/validate.py --check-folders
+        language: system
+        pass_filenames: false
+        always_run: true
+
+      - id: raw-readonly
+        name: Enforce raw/ is read-only
+        entry: _scripts/pre-commit-raw-readonly.sh
+        language: system
+        pass_filenames: false
+
+      - id: pytest
+        name: Run tests
+        entry: python -m pytest tests/ -q
+        language: system
+        pass_filenames: false
+        always_run: true

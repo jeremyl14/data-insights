@@ -1,0 +1,19 @@
+# CODEOWNERS — route PR reviews to the right people.
+# See https://docs.github.com/en/repositories/managing-your-repository-on-github/about-code-owners
+
+# Catalog and schema changes require maintainer review
+/catalog/              @jeremyl14
+/docs/SCHEMA.md        @jeremyl14
+/docs/DECISIONS.md     @jeremyl14
+
+# Shared scripts require maintainer review
+/_scripts/             @jeremyl14
+
+# CI and workflow files require maintainer review
+/.github/              @jeremyl14
+
+# DVC configuration
+/.dvc/                 @jeremyl14
+
+# Agent definitions
+/agents/               @jeremyl14
