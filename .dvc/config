@@ -1,0 +1,7 @@
+[core]
+    no_scm = True
+    remote = b2
+['remote "b2"']
+    url = s3://data-insights-raw/snapshots
+    endpointurl = https://s3.ca-east-006.backblazeb2.com
+    region = ca-east-006

@@ -1,0 +1,50 @@
+name: Reproduce analysis
+
+on:
+  pull_request:
+    paths:
+      - 'datasets/*/analysis/**'
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Find changed analysis directories
+        id: analyses
+        run: |
+          # List analysis dirs that changed in this PR
+          CHANGED=$(git diff --name-only origin/main...HEAD \
+            | grep -oP '^datasets/[^/]+/analysis/[^/]+' \
+            | sort -u || true)
+          if [ -z "$CHANGED" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "dirs<<EOF" >> "$GITHUB_OUTPUT"
+            echo "$CHANGED" >> "$GITHUB_OUTPUT"
+            echo "EOF" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Try to reproduce each changed analysis
+        if: steps.analyses.outputs.skip == 'false'
+        run: |
+          for dir in ${{ steps.analyses.outputs.dirs }}; do
+            echo "--- Reproducing: $dir ---"
+            req="$dir/requirements.txt"
+            script="$dir/analyze.py"
+            if [ ! -f "$script" ]; then
+              echo "  SKIP: no analyze.py found"
+              continue
+            fi
+            if [ -f "$req" ]; then
+              pip install -r "$req" 2>&1 | tail -3
+            fi
+            python "$script" || echo "  FAIL: analyze.py exited with code $?"
+          done

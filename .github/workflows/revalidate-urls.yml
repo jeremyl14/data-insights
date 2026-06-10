@@ -1,0 +1,37 @@
+name: Revalidate URLs (quarterly)
+
+on:
+  schedule:
+    # First day of each quarter at 06:00 UTC
+    - cron: "0 6 1 1,4,7,10 *"
+  workflow_dispatch:
+
+jobs:
+  revalidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check all URLs
+        run: python _scripts/validate.py --check-urls --report revalidation-report.md
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.existsSync('revalidation-report.md')
+              ? fs.readFileSync('revalidation-report.md', 'utf8')
+              : 'No report available.';
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Quarterly URL revalidation: ${new Date().toISOString().slice(0,10)}`,
+              body: `Automated quarterly check found issues:\n\n${report}`,
+              labels: ['maintenance', 'catalog'],
+            });
