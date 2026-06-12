@@ -1,0 +1,129 @@
+code,description,category,line_scope,count_all,count_significant,mean_delay_min,median_delay_min,total_delay_min,p95_delay_min
+SUDP,Disorderly Patron,Safety/Security,YU,2944,651,9.086021505376344,7.0,7646,21.0
+MUIR,Injured or ill Customer (On Train) - Medical Aid Refused,Operations,YU,841,408,9.713235294117647,8.0,4797,18.649999999999977
+SUUT,Unauthorized at Track Level,Safety/Security,YU,571,246,14.995934959349594,12.0,3917,31.5
+MUI,Injured or ill Customer (On Train) - Transported,Operations,YU,412,263,13.49809885931559,10.0,3785,33.799999999999955
+SUO,Passenger Other,Safety/Security,YU,1669,239,12.192468619246862,9.0,3418,26.099999999999994
+PUOPO,OPTO (COMMS) Train Door Monitoring,Infrastructure,YU,1258,278,7.953237410071942,6.0,3406,16.149999999999977
+MUPAA,Passenger Assistance Alarm Activated - No Trouble Found,Operations,YU,1366,198,5.954545454545454,5.0,2952,9.149999999999977
+MUWEA,Weather Reports / Related Delays,Operations,YU,211,45,52.75555555555555,7.0,2745,211.39999999999935
+PUTWZ,Work Zone Problems - Track,Infrastructure,YU,244,158,13.879746835443038,8.0,2333,41.80000000000007
+TUO,Transportation Department - Other,Transportation,YU,451,178,7.803370786516854,6.0,1955,15.0
+SUAP,Assault / Patron Involved,Safety/Security,YU,673,128,13.0078125,10.5,1759,26.0
+MUSAN,Unsanitary Vehicle,Operations,YU,418,162,5.888888888888889,5.0,1740,8.0
+MUPR1,Priority One - Train in Contact With Person,Operations,YU,21,20,84.3,94.0,1690,150.65
+MUPLB,Fire/Smoke Plan B - Source TTC,Operations,YU,46,39,37.15384615384615,30.0,1453,87.30000000000001
+PUSSW,Track Switch Failure - Signal Related Problem,Infrastructure,YU,60,42,32.095238095238095,20.0,1383,86.39999999999995
+MUO,Miscellaneous Other,Operations,YU,568,103,9.427184466019417,6.0,1311,21.89999999999999
+PUTR,Rail Related Problem,Infrastructure,YU,187,127,8.48031496062992,7.0,1267,16.0
+MUDD,Door Problems - Debris Related,Operations,YU,202,104,8.346153846153847,7.0,1097,15.849999999999994
+PUTO,T&S Other,Infrastructure,YU,135,81,12.098765432098766,7.0,1092,37.0
+EUDO,Door Problems - Faulty Equipment,Equipment,YU,189,87,8.839080459770114,7.0,994,15.0
+EUNT,Equipment - No Trouble Found,Equipment,YU,157,89,7.696629213483146,6.0,861,15.199999999999989
+PUTTP,Traction Power Rail Related,Infrastructure,YU,6,5,162.6,138.0,813,328.4
+TUMVS,Operator Violated Signal,Transportation,YU,217,58,9.689655172413794,7.0,811,31.449999999999996
+SUEAS,Emergency Alarm Station Activation,Safety/Security,YU,57,56,13.428571428571429,12.0,752,25.0
+MUTO,Misc. Transportation Other - Employee Non-Chargeable,Operations,YU,160,57,7.140350877192983,6.0,717,16.39999999999999
+TUCC,Transit Control Related Problems,Transportation,YU,83,47,13.063829787234043,9.0,713,34.09999999999999
+PUTS,Structure Related Problem,Infrastructure,YU,13,2,264.0,264.0,558,458.4
+TUNIP,Operator Not In Position,Transportation,YU,118,44,6.818181818181818,6.0,537,14.250000000000007
+PUSI,Signals or Related Components Failure,Infrastructure,YU,108,24,19.458333333333332,7.0,526,109.64999999999985
+PUSTS,Signals - Train Stops,Infrastructure,YU,100,26,15.615384615384615,7.0,502,40.75
+SUPOL,Held By Polce - Non-TTC Related,Safety/Security,YU,79,35,12.685714285714285,11.0,493,28.399999999999977
+MUD,Door Problems - Passenger Related,Operations,YU,128,41,6.634146341463414,6.0,491,10.0
+EUBK,Brakes,Equipment,YU,75,29,13.620689655172415,8.0,486,39.79999999999998
+EUVE,Work Vehicle,Equipment,YU,66,32,12.59375,7.5,469,35.349999999999994
+SUAE,Assault / Employee Involved,Safety/Security,YU,236,30,14.066666666666666,8.5,443,34.29999999999998
+PUSAC,Signals Axle Counter Block Failure,Infrastructure,YU,92,40,8.85,6.5,435,22.19999999999999
+MUSC,Miscellaneous Speed Control,Operations,YU,881,28,6.035714285714286,5.0,384,9.0
+EUO,RC&S Other,Equipment,YU,59,42,7.857142857142857,6.0,378,11.949999999999996
+TUS,Crew Unable to Maintain Schedule,Transportation,YU,76,38,6.473684210526316,6.0,378,10.299999999999997
+SUG,Graffiti / Scratchiti,Safety/Security,YU,251,35,6.114285714285714,5.0,374,7.0
+PUTDN,Debris At Track Level - Uncontrollable,Infrastructure,YU,33,20,14.65,8.0,324,44.70000000000001
+EUSC,Speed Control Equipment,Equipment,YU,490,16,10.125,6.0,314,27.0
+EUPI,Propulsion System,Equipment,YU,54,14,13.142857142857142,6.0,298,43.14999999999998
+TUSC,Operator Overspeeding,Transportation,YU,557,22,5.818181818181818,5.0,295,8.0
+PUMO,Station Other,Infrastructure,YU,216,9,29.77777777777778,15.0,291,103.19999999999996
+TUOS,Operator Overshot Platform,Transportation,YU,79,22,6.181818181818182,6.0,280,8.0
+PUSTP,Traction Power or Related Components Failure,Infrastructure,YU,9,7,38.714285714285715,12.0,279,137.7999999999999
+PUTSM,Track Switch Failure - Track Related Problem,Infrastructure,YU,38,5,35.8,42.0,274,60.0
+PUSRA,Subway Radio System Fault,Infrastructure,YU,59,27,6.7407407407407405,6.0,269,9.7
+EUCD,Consequential Delay (2nd Delay Same Fault),Equipment,YU,51,16,9.875,7.5,254,18.25
+PUTIS,Ice / Snow Related Problems,Infrastructure,YU,37,20,10.7,6.0,239,23.000000000000014
+PUCSC,Signal Control Problem - Signals,Infrastructure,YU,14,8,28.375,14.0,234,85.94999999999997
+EUATC,ATC RC&S Equipment,Equipment,YU,66,19,7.7894736842105265,6.0,230,14.999999999999979
+PUTIJ,Insulated Joint Related Problem,Infrastructure,YU,30,12,17.083333333333332,10.0,225,53.64999999999996
+PUATC,ATC Signals Other,Infrastructure,YU,66,21,6.761904761904762,6.0,222,13.0
+TUATC,ATC Operator Related,Transportation,YU,76,22,6.863636363636363,6.0,222,11.95
+EUBO,Body,Equipment,YU,45,19,6.684210526315789,5.0,213,11.89999999999998
+EUTL,Trainline System,Equipment,YU,15,6,30.5,30.5,213,53.75
+PUSTC,Signals - Track Circuit Problems,Infrastructure,YU,32,7,22.428571428571427,8.0,203,69.29999999999995
+EUME,RC&S Maintenance Error - (Human),Equipment,YU,33,18,8.11111111111111,6.0,190,14.399999999999977
+MUIS,Injured or ill Customer (In Station) - Transported,Operations,YU,2325,19,8.578947368421053,6.0,183,16.39999999999999
+TUNOA,No Operator Immediately Available,Transportation,YU,46,17,6.0,5.0,180,10.599999999999998
+PUEO,,Infrastructure,,36,5,20.4,7.0,172,62.39999999999999
+PUSO,S/E/C Department Other,Infrastructure,YU,33,13,11.076923076923077,8.0,167,28.599999999999973
+TUSUP,Supervisory Error,Transportation,YU,32,15,7.6,5.0,161,15.499999999999995
+MUIRS,Injured or ill Customer (In Station) - Medical Aid Refused,Operations,YU,1093,14,7.428571428571429,6.5,155,12.7
+PUTD,Track Level Debris - Controllable,Infrastructure,YU,17,8,17.625,6.5,148,52.999999999999986
+EUAC,Air Conditioning,Equipment,YU,16,3,28.666666666666668,6.0,124,68.1
+EUYRD,Yard/Carhouse Related Problems,Equipment,YU,32,13,5.384615384615385,5.0,123,7.0
+PUSCR,Subway Car Radio Fault,Infrastructure,YU,23,15,6.0,5.0,115,9.599999999999998
+MUTD,Training Department Related Delays,Operations,YU,35,10,6.5,6.0,114,9.649999999999997
+TUDOE,Doors Open in Error,Transportation,YU,4,3,38.0,40.0,114,46.3
+PUSZC,Signals Zone Countroller Failure,Infrastructure,YU,4,4,25.75,29.5,103,37.65
+PUSIS,Signals Track Weather Related,Infrastructure,YU,28,11,6.7272727272727275,6.0,100,10.5
+TUKEY,Two Drum Switch Keys Activated,Transportation,YU,29,8,6.625,5.5,96,9.95
+SUSA,Sexual Assault,Safety/Security,YU,56,6,14.833333333333334,9.5,95,32.0
+MUPF,,Operations,,41,9,8.333333333333334,7.0,87,14.999999999999998
+PUEWZ,,Infrastructure,,5,5,16.8,5.0,84,52.19999999999999
+MUPLA,Fire/Smoke Plan A,Operations,YU,9,6,13.0,10.5,81,22.0
+PUCSS,Central Office Signalling System,Infrastructure,YU,18,5,13.2,6.0,79,33.199999999999996
+MUCL,Divisional Clerk Related,Operations,YU,21,9,5.222222222222222,5.0,79,6.199999999999999
+PUSNT,Signal Problem - No Trouble,Infrastructure,YU,38,6,7.333333333333333,7.0,76,11.0
+EUNEA,No Equipment Available,Equipment,YU,14,4,8.25,6.0,67,14.649999999999997
+MUIE,Injured Employee,Operations,YU,191,6,5.833333333333333,5.0,65,8.25
+TUML,Mainline Storage,Transportation,YU,13,5,8.2,8.0,57,10.399999999999999
+SUBT,Bomb Threat,Safety/Security,YU,3,3,18.333333333333332,19.0,55,19.0
+MUWR,Work Refusal,Operations,YU,37,4,11.75,9.5,54,21.499999999999996
+EUCA,Compressed Air,Equipment,YU,15,5,6.4,5.0,54,9.399999999999999
+PUTOE,T & S Operator Related Problems,Infrastructure,YU,29,6,7.5,7.0,52,10.75
+PUSCA,SCADA Related Problems,Infrastructure,YU,4,2,25.5,25.5,51,38.55
+PUTCD,T & S Contractor Problems,Infrastructure,YU,3,1,42.0,42.0,46,42.0
+PUSWZ,Work Zone Problems - Signals,Infrastructure,YU,16,4,7.75,6.0,45,12.949999999999998
+MUNOA,No Operator Immediately Available - Not E.S.A. Related,Operations,YU,11,5,5.2,5.0,43,5.8
+MUPLC,Fire/Smoke Plan C,Operations,YU,21,4,10.0,10.0,43,12.85
+EUTR,Trucks,Equipment,YU,7,2,14.5,14.5,42,16.75
+MUEC,Misc. Engineering & Construction Related Problems,Operations,YU,2,1,42.0,42.0,42,42.0
+SUROB,Robbery,Safety/Security,YU,36,5,8.4,8.0,42,11.6
+EULV,Low Voltage,Equipment,YU,5,3,11.333333333333334,12.0,38,16.5
+TUSET,Train Controls Improperly Shut Down,Transportation,YU,10,3,5.0,5.0,36,5.0
+EUTRD,TR Cab Doors,Equipment,YU,6,3,9.666666666666666,9.0,36,12.6
+EUAL,Alternating Current,Equipment,YU,9,3,5.0,5.0,34,5.0
+SUSP,Suspicious Package,Safety/Security,YU,6,3,9.0,7.0,31,13.299999999999999
+EUCO,Couplers,Equipment,YU,4,3,8.333333333333334,8.0,29,9.8
+EUOE,Rail Cars & Shops Opr. Error,Equipment,YU,24,2,8.5,8.5,29,11.65
+EUVA,Warning Alarm Systems,Equipment,YU,9,2,5.5,5.5,27,5.95
+TUOPO,OPTO Operator Related,Transportation,YU,7,3,6.333333333333333,6.0,26,6.9
+EUECD,ECD / Line Mechanic Related Prob.,Equipment,YU,6,2,7.5,7.5,25,8.85
+PUEME,,Infrastructure,,6,3,5.333333333333333,5.0,23,5.9
+MUFS,Fire/Smoke Plan B - Source External to TTC,Operations,YU,6,2,8.5,8.5,17,10.75
+PUTTC,Track Circuit Problems - Re: Defective Bolts/Bonding,Infrastructure,YU,7,1,14.0,14.0,17,14.0
+TUUR,,Transportation,,3,1,5.0,5.0,13,5.0
+EUOPO,OPTO RC&S Non-Train Door Monitoring,Equipment,YU,3,2,6.0,6.0,12,6.9
+EUTM,Traction Motors,Equipment,YU,3,0,0.0,0.0,10,0.0
+PUTSC,Signal Control Problem - Track,Infrastructure,YU,6,1,5.0,5.0,9,5.0
+EULT,Lighting System,Equipment,YU,2,0,0.0,0.0,8,0.0
+MUCP,,Operations,,228,0,0.0,0.0,4,0.0
+PUSIO,Smart IO Failure,Infrastructure,YU,4,0,0.0,0.0,3,0.0
+MUGD,Miscellaneous General Delays,Operations,YU,26,0,0.0,0.0,0,0.0
+MUESA,No Operator Immediately Available,Operations,YU,2,0,0.0,0.0,0,0.0
+MUNCA,,Operations,,939,0,0.0,0.0,0,0.0
+PUMEL,Escalator/Elevator Incident,Infrastructure,YU,811,0,0.0,0.0,0,0.0
+PUDCS,Data Communications System Failure,Infrastructure,YU,1,0,0.0,0.0,0,0.0
+PUCBI,Central Logic Controller Failure,Infrastructure,YU,1,0,0.0,0.0,0,0.0
+PUMST,Station Stairway Incident,Infrastructure,YU,323,0,0.0,0.0,0,0.0
+PUTNT,T&S Related Problem - NTF,Infrastructure,YU,1,0,0.0,0.0,0,0.0
+TUNCA,,Transportation,,1047,0,0.0,0.0,0,0.0
+TUST,Storm Trains,Transportation,YU,18,0,0.0,0.0,0,0.0
+XXXXX,,Other,,3,0,0.0,0.0,0,0.0

@@ -1,0 +1,5 @@
+outs:
+- md5: f047f5bbb3cb0502f464427801ab8ca1
+  size: 30527044
+  hash: md5
+  path: cycling-permanent-counts-15min-2025-2026.csv

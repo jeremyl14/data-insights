@@ -1,0 +1,119 @@
+location_dir_id,location_name,direction,year,mean_daily_volume,days_with_data
+3,"Bloor St W, west of Oakmount Rd",Eastbound,2023,519.7,199
+3,"Bloor St W, west of Oakmount Rd",Eastbound,2024,530.4,364
+3,"Bloor St W, west of Oakmount Rd",Eastbound,2025,428.6,340
+3,"Bloor St W, west of Oakmount Rd",Eastbound,2026,191.0,119
+4,"Bloor St W, west of Oakmount Rd",Westbound,2023,553.0,199
+4,"Bloor St W, west of Oakmount Rd",Westbound,2024,562.2,364
+4,"Bloor St W, west of Oakmount Rd",Westbound,2025,448.5,340
+4,"Bloor St W, west of Oakmount Rd",Westbound,2026,207.5,119
+5,"Bloor St W, west of Huron St",Eastbound,2023,1353.6,202
+5,"Bloor St W, west of Huron St",Eastbound,2025,2350.1,187
+5,"Bloor St W, west of Huron St",Eastbound,2026,939.5,119
+6,"Bloor St W, west of Huron St",Westbound,2023,1191.4,202
+6,"Bloor St W, west of Huron St",Westbound,2025,2363.0,185
+6,"Bloor St W, west of Huron St",Westbound,2026,959.3,119
+8,"Bloor St W, east of Palmerston Blvd",Eastbound,2023,2214.5,228
+8,"Bloor St W, east of Palmerston Blvd",Eastbound,2024,2315.7,296
+8,"Bloor St W, east of Palmerston Blvd",Eastbound,2025,2090.5,364
+8,"Bloor St W, east of Palmerston Blvd",Eastbound,2026,757.2,119
+9,"Bloor St W, east of Palmerston Blvd",Westbound,2023,2058.2,276
+9,"Bloor St W, east of Palmerston Blvd",Westbound,2024,1912.4,365
+9,"Bloor St W, east of Palmerston Blvd",Westbound,2025,1861.8,364
+9,"Bloor St W, east of Palmerston Blvd",Westbound,2026,767.1,119
+12,"Bloor St W, east of Old Mill Trl",Eastbound,2024,229.8,154
+12,"Bloor St W, east of Old Mill Trl",Eastbound,2025,204.4,333
+12,"Bloor St W, east of Old Mill Trl",Eastbound,2026,34.8,118
+13,"Bloor St W, east of Old Mill Trl",Westbound,2024,239.9,154
+13,"Bloor St W, east of Old Mill Trl",Westbound,2025,210.3,336
+13,"Bloor St W, east of Old Mill Trl",Westbound,2026,34.7,119
+14,"Keele St, south of Sheppard Ave W (multi-use path)",Northbound,2022,19.8,146
+14,"Keele St, south of Sheppard Ave W (multi-use path)",Northbound,2023,14.8,240
+14,"Keele St, south of Sheppard Ave W (multi-use path)",Northbound,2024,24.3,362
+14,"Keele St, south of Sheppard Ave W (multi-use path)",Northbound,2025,20.5,364
+14,"Keele St, south of Sheppard Ave W (multi-use path)",Northbound,2026,10.1,119
+15,"Keele St, south of Sheppard Ave W (multi-use path)",Southbound,2022,16.3,146
+15,"Keele St, south of Sheppard Ave W (multi-use path)",Southbound,2023,12.4,239
+15,"Keele St, south of Sheppard Ave W (multi-use path)",Southbound,2024,20.7,362
+15,"Keele St, south of Sheppard Ave W (multi-use path)",Southbound,2025,16.7,364
+15,"Keele St, south of Sheppard Ave W (multi-use path)",Southbound,2026,7.1,119
+16,"Sheppard Ave W, west of Sentinel Rd (multi-use path)",Eastbound,2023,10.4,265
+16,"Sheppard Ave W, west of Sentinel Rd (multi-use path)",Eastbound,2024,9.6,339
+16,"Sheppard Ave W, west of Sentinel Rd (multi-use path)",Eastbound,2025,8.7,304
+17,"Sheppard Ave W, west of Sentinel Rd (multi-use path)",Westbound,2023,15.8,274
+17,"Sheppard Ave W, west of Sentinel Rd (multi-use path)",Westbound,2024,13.5,350
+17,"Sheppard Ave W, west of Sentinel Rd (multi-use path)",Westbound,2025,4.5,132
+18,"Sherbourne St, north of Gerrard St",Northbound,2023,641.0,364
+18,"Sherbourne St, north of Gerrard St",Northbound,2024,726.0,365
+18,"Sherbourne St, north of Gerrard St",Northbound,2025,691.6,363
+18,"Sherbourne St, north of Gerrard St",Northbound,2026,297.1,119
+19,"Sherbourne St, north of Gerrard St",Southbound,2023,784.0,364
+19,"Sherbourne St, north of Gerrard St",Southbound,2024,849.4,365
+19,"Sherbourne St, north of Gerrard St",Southbound,2025,758.8,363
+19,"Sherbourne St, north of Gerrard St",Southbound,2026,305.9,119
+22,"Sherbourne St, north of Wellesley St E",Northbound,2023,614.5,364
+22,"Sherbourne St, north of Wellesley St E",Northbound,2024,836.8,365
+22,"Sherbourne St, north of Wellesley St E",Northbound,2025,727.1,364
+22,"Sherbourne St, north of Wellesley St E",Northbound,2026,315.5,119
+23,"Sherbourne St, north of Wellesley St E",Southbound,2023,837.2,364
+23,"Sherbourne St, north of Wellesley St E",Southbound,2024,1007.8,365
+23,"Sherbourne St, north of Wellesley St E",Southbound,2025,846.0,363
+23,"Sherbourne St, north of Wellesley St E",Southbound,2026,380.3,119
+26,"Yonge St, north of Bloor St",Northbound,2023,580.2,364
+26,"Yonge St, north of Bloor St",Northbound,2024,744.4,365
+26,"Yonge St, north of Bloor St",Northbound,2025,736.9,364
+26,"Yonge St, north of Bloor St",Northbound,2026,331.2,119
+27,"Yonge St, north of Bloor St",Southbound,2023,626.4,363
+27,"Yonge St, north of Bloor St",Southbound,2024,987.5,365
+27,"Yonge St, north of Bloor St",Southbound,2025,982.8,363
+27,"Yonge St, north of Bloor St",Southbound,2026,469.8,119
+28,"Yonge St, north of Davenport Rd",Northbound,2024,747.7,351
+28,"Yonge St, north of Davenport Rd",Northbound,2025,724.4,363
+28,"Yonge St, north of Davenport Rd",Northbound,2026,359.7,119
+29,"Yonge St, north of Davenport Rd",Southbound,2023,695.4,363
+29,"Yonge St, north of Davenport Rd",Southbound,2024,884.3,365
+29,"Yonge St, north of Davenport Rd",Southbound,2025,896.4,363
+29,"Yonge St, north of Davenport Rd",Southbound,2026,294.9,119
+30,"Yonge St, north of Macpherson Ave",Northbound,2023,467.0,364
+30,"Yonge St, north of Macpherson Ave",Northbound,2024,668.5,365
+30,"Yonge St, north of Macpherson Ave",Northbound,2025,532.3,204
+31,"Yonge St, north of Macpherson Ave",Southbound,2024,938.8,192
+31,"Yonge St, north of Macpherson Ave",Southbound,2025,728.1,204
+32,"Yonge St, north of St Clair Ave",Northbound,2023,367.7,364
+32,"Yonge St, north of St Clair Ave",Northbound,2024,531.0,365
+32,"Yonge St, north of St Clair Ave",Northbound,2025,457.3,364
+32,"Yonge St, north of St Clair Ave",Northbound,2026,152.8,119
+33,"Yonge St, north of St Clair Ave",Southbound,2023,464.1,364
+33,"Yonge St, north of St Clair Ave",Southbound,2024,686.3,365
+33,"Yonge St, north of St Clair Ave",Southbound,2025,678.2,364
+33,"Yonge St, north of St Clair Ave",Southbound,2026,328.3,118
+34,"Yonge St, south of Davisville Ave",Northbound,2023,279.4,364
+34,"Yonge St, south of Davisville Ave",Northbound,2024,457.1,320
+34,"Yonge St, south of Davisville Ave",Northbound,2025,381.4,354
+34,"Yonge St, south of Davisville Ave",Northbound,2026,135.8,119
+35,"Yonge St, south of Davisville Ave",Southbound,2023,272.7,358
+35,"Yonge St, south of Davisville Ave",Southbound,2024,453.8,320
+35,"Yonge St, south of Davisville Ave",Southbound,2025,430.9,354
+35,"Yonge St, south of Davisville Ave",Southbound,2026,178.3,119
+36,"Keele St, north of Four Winds Dr (multi-use path)",Northbound,2022,36.0,205
+36,"Keele St, north of Four Winds Dr (multi-use path)",Northbound,2023,32.5,363
+36,"Keele St, north of Four Winds Dr (multi-use path)",Northbound,2024,44.6,353
+36,"Keele St, north of Four Winds Dr (multi-use path)",Northbound,2025,27.7,276
+36,"Keele St, north of Four Winds Dr (multi-use path)",Northbound,2026,13.3,119
+37,"Keele St, north of Four Winds Dr (multi-use path)",Southbound,2022,36.6,207
+37,"Keele St, north of Four Winds Dr (multi-use path)",Southbound,2023,33.6,364
+37,"Keele St, north of Four Winds Dr (multi-use path)",Southbound,2024,47.4,353
+37,"Keele St, north of Four Winds Dr (multi-use path)",Southbound,2025,40.3,276
+37,"Keele St, north of Four Winds Dr (multi-use path)",Southbound,2026,15.6,119
+38,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Northbound,2022,17.7,199
+38,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Northbound,2023,18.4,331
+38,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Northbound,2024,16.6,327
+38,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Northbound,2026,4.9,102
+39,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Southbound,2022,16.1,197
+39,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Southbound,2023,14.9,331
+39,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Southbound,2024,15.3,327
+39,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Southbound,2026,4.3,102
+746,"Bloor St E, west of Castle Frank Rd",Eastbound,2025,1475.0,289
+746,"Bloor St E, west of Castle Frank Rd",Eastbound,2026,510.9,119
+747,"Bloor St E, west of Castle Frank Rd",Westbound,2025,1463.2,289
+747,"Bloor St E, west of Castle Frank Rd",Westbound,2026,521.4,119

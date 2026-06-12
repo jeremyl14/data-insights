@@ -1,0 +1,5 @@
+x,y,controlling_for,partial_r,p_value,significant_005
+Daily trips,311 complaints,Mean temp (°C),-0.21136397783636593,5.425482752254545e-06,True
+Daily trips,Snowfall (cm),Mean temp (°C),-0.2602367027712393,1.7698283123393075e-08,True
+311 complaints,Snowfall (cm),Mean temp (°C),-0.06789998046738392,0.14816561637604422,False
+Daily trips,311 complaints,"Mean temp (°C), Snowfall (cm)",-0.23775575780821226,2.877241315910227e-07,True

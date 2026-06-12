@@ -1,0 +1,5 @@
+line,period,total_delays,significant_delays,mean_delay_min,ci_lower,ci_upper,total_delay_min
+YU,rush,3138,606,11.75,10.15,13.87,7120
+YU,off-peak,9944,2223,11.45,10.38,12.71,25446
+BD,rush,2670,421,10.9,9.86,12.06,4587
+BD,off-peak,8475,1450,11.47,10.74,12.29,16636

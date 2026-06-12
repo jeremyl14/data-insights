@@ -1,0 +1,4 @@
+# Generated outputs from analyze.py
+*.png
+!annual-summary.csv
+!monthly-by-location.csv

@@ -1,0 +1,4 @@
+# Generated outputs from analyze.py
+*.png
+!trip-duration-stats.csv
+!trip-duration-yearly-stats.csv

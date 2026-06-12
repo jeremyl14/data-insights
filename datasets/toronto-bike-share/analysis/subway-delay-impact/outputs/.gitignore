@@ -1,0 +1,4 @@
+# Generated outputs from analyze.py
+*.png
+!daily-delay-summary.csv
+!regression-results.csv

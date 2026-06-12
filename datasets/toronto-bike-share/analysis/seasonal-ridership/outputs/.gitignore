@@ -1,0 +1,6 @@
+# Generated outputs from analyze.py
+*.png
+*.html
+*.pdf
+!daily-rides.csv
+!yearly-totals.csv

@@ -1,0 +1,578 @@
+location_name,year,month,mean_daily_volume,total_volume,days_with_data
+"Bloor St E, west of Castle Frank Rd",2025,3,1982.642857142857,27757,14
+"Bloor St E, west of Castle Frank Rd",2025,4,2552.266666666667,76568,30
+"Bloor St E, west of Castle Frank Rd",2025,5,3140.7741935483873,97364,31
+"Bloor St E, west of Castle Frank Rd",2025,6,3841.4666666666667,115244,30
+"Bloor St E, west of Castle Frank Rd",2025,7,3900.032258064516,120901,31
+"Bloor St E, west of Castle Frank Rd",2025,8,3547.3225806451615,109967,31
+"Bloor St E, west of Castle Frank Rd",2025,9,3865.0333333333333,115951,30
+"Bloor St E, west of Castle Frank Rd",2025,10,3139.0967741935483,97312,31
+"Bloor St E, west of Castle Frank Rd",2025,11,2065.3333333333335,61960,30
+"Bloor St E, west of Castle Frank Rd",2025,12,841.9677419354839,26101,31
+"Bloor St E, west of Castle Frank Rd",2026,1,378.9032258064516,11746,31
+"Bloor St E, west of Castle Frank Rd",2026,2,449.9642857142857,12599,28
+"Bloor St E, west of Castle Frank Rd",2026,3,1197.7,35931,30
+"Bloor St E, west of Castle Frank Rd",2026,4,2085.5333333333333,62566,30
+"Bloor St W, east of Old Mill Trl",2024,7,721.0,721,1
+"Bloor St W, east of Old Mill Trl",2024,8,658.3225806451613,20408,31
+"Bloor St W, east of Old Mill Trl",2024,9,668.8333333333334,20065,30
+"Bloor St W, east of Old Mill Trl",2024,10,549.6774193548387,17040,31
+"Bloor St W, east of Old Mill Trl",2024,11,352.7,10581,30
+"Bloor St W, east of Old Mill Trl",2024,12,113.61290322580645,3522,31
+"Bloor St W, east of Old Mill Trl",2025,1,59.54838709677419,1846,31
+"Bloor St W, east of Old Mill Trl",2025,2,39.785714285714285,1114,28
+"Bloor St W, east of Old Mill Trl",2025,3,160.7,4821,30
+"Bloor St W, east of Old Mill Trl",2025,4,344.6333333333333,10339,30
+"Bloor St W, east of Old Mill Trl",2025,5,527.1290322580645,16341,31
+"Bloor St W, east of Old Mill Trl",2025,6,682.4333333333333,20473,30
+"Bloor St W, east of Old Mill Trl",2025,7,724.0645161290323,22446,31
+"Bloor St W, east of Old Mill Trl",2025,8,647.1612903225806,20062,31
+"Bloor St W, east of Old Mill Trl",2025,9,667.5666666666667,20027,30
+"Bloor St W, east of Old Mill Trl",2025,10,460.4193548387097,14273,31
+"Bloor St W, east of Old Mill Trl",2025,11,223.96666666666667,6719,30
+"Bloor St W, east of Old Mill Trl",2025,12,59.5,238,4
+"Bloor St W, east of Old Mill Trl",2026,1,34.483870967741936,1069,31
+"Bloor St W, east of Old Mill Trl",2026,2,0.03571428571428571,1,28
+"Bloor St W, east of Old Mill Trl",2026,3,0.0,0,30
+"Bloor St W, east of Old Mill Trl",2026,4,238.8,7164,30
+"Bloor St W, east of Palmerston Blvd",2023,3,1619.0,1619,1
+"Bloor St W, east of Palmerston Blvd",2023,4,3519.0,105570,30
+"Bloor St W, east of Palmerston Blvd",2023,5,5131.258064516129,159069,31
+"Bloor St W, east of Palmerston Blvd",2023,6,4870.466666666666,146114,30
+"Bloor St W, east of Palmerston Blvd",2023,7,5215.032258064516,161666,31
+"Bloor St W, east of Palmerston Blvd",2023,8,4608.258064516129,142856,31
+"Bloor St W, east of Palmerston Blvd",2023,9,4391.633333333333,131749,30
+"Bloor St W, east of Palmerston Blvd",2023,10,3784.8387096774195,117330,31
+"Bloor St W, east of Palmerston Blvd",2023,11,2229.5,66885,30
+"Bloor St W, east of Palmerston Blvd",2023,12,1293.9032258064517,40111,31
+"Bloor St W, east of Palmerston Blvd",2024,1,967.5483870967741,29994,31
+"Bloor St W, east of Palmerston Blvd",2024,2,1273.9655172413793,36945,29
+"Bloor St W, east of Palmerston Blvd",2024,3,2200.766666666667,66023,30
+"Bloor St W, east of Palmerston Blvd",2024,4,3287.8,98634,30
+"Bloor St W, east of Palmerston Blvd",2024,5,4694.387096774193,145526,31
+"Bloor St W, east of Palmerston Blvd",2024,6,5008.4,150252,30
+"Bloor St W, east of Palmerston Blvd",2024,7,5234.451612903225,162268,31
+"Bloor St W, east of Palmerston Blvd",2024,8,5058.806451612903,156823,31
+"Bloor St W, east of Palmerston Blvd",2024,9,5576.033333333334,167281,30
+"Bloor St W, east of Palmerston Blvd",2024,10,5302.096774193548,164365,31
+"Bloor St W, east of Palmerston Blvd",2024,11,4475.4,134262,30
+"Bloor St W, east of Palmerston Blvd",2024,12,2294.032258064516,71115,31
+"Bloor St W, east of Palmerston Blvd",2025,1,1722.8709677419354,53409,31
+"Bloor St W, east of Palmerston Blvd",2025,2,1009.3571428571429,28262,28
+"Bloor St W, east of Palmerston Blvd",2025,3,2578.266666666667,77348,30
+"Bloor St W, east of Palmerston Blvd",2025,4,3910.5333333333333,117316,30
+"Bloor St W, east of Palmerston Blvd",2025,5,4994.903225806452,154842,31
+"Bloor St W, east of Palmerston Blvd",2025,6,6041.733333333334,181252,30
+"Bloor St W, east of Palmerston Blvd",2025,7,6095.1612903225805,188950,31
+"Bloor St W, east of Palmerston Blvd",2025,8,5764.032258064516,178685,31
+"Bloor St W, east of Palmerston Blvd",2025,9,6032.366666666667,180971,30
+"Bloor St W, east of Palmerston Blvd",2025,10,4704.451612903225,145838,31
+"Bloor St W, east of Palmerston Blvd",2025,11,2936.266666666667,88088,30
+"Bloor St W, east of Palmerston Blvd",2025,12,1409.741935483871,43702,31
+"Bloor St W, east of Palmerston Blvd",2026,1,819.1290322580645,25393,31
+"Bloor St W, east of Palmerston Blvd",2026,2,518.4285714285714,14516,28
+"Bloor St W, east of Palmerston Blvd",2026,3,1797.2,53916,30
+"Bloor St W, east of Palmerston Blvd",2026,4,2918.9666666666667,87569,30
+"Bloor St W, west of Huron St",2022,10,2962.6,14813,5
+"Bloor St W, west of Huron St",2022,11,2129.8333333333335,63895,30
+"Bloor St W, west of Huron St",2022,12,1246.6774193548388,38647,31
+"Bloor St W, west of Huron St",2023,1,1115.516129032258,34581,31
+"Bloor St W, west of Huron St",2023,2,1148.642857142857,32162,28
+"Bloor St W, west of Huron St",2023,3,1423.3,42699,30
+"Bloor St W, west of Huron St",2023,4,2610.6666666666665,78320,30
+"Bloor St W, west of Huron St",2023,5,3682.6451612903224,114162,31
+"Bloor St W, west of Huron St",2023,6,4040.6666666666665,121220,30
+"Bloor St W, west of Huron St",2023,7,4133.590909090909,90939,22
+"Bloor St W, west of Huron St",2025,6,5392.0,16176,3
+"Bloor St W, west of Huron St",2025,7,6150.709677419355,190672,31
+"Bloor St W, west of Huron St",2025,8,5624.774193548387,174368,31
+"Bloor St W, west of Huron St",2025,9,6368.633333333333,191059,30
+"Bloor St W, west of Huron St",2025,10,4840.677419354839,150061,31
+"Bloor St W, west of Huron St",2025,11,3431.866666666667,102956,30
+"Bloor St W, west of Huron St",2025,12,1655.8064516129032,51330,31
+"Bloor St W, west of Huron St",2026,1,1025.8387096774193,31801,31
+"Bloor St W, west of Huron St",2026,2,916.4285714285714,25660,28
+"Bloor St W, west of Huron St",2026,3,2203.0333333333333,66091,30
+"Bloor St W, west of Huron St",2026,4,3413.6,102408,30
+"Bloor St W, west of Oakmount Rd",2023,6,1433.1333333333334,21497,15
+"Bloor St W, west of Oakmount Rd",2023,7,1417.258064516129,43935,31
+"Bloor St W, west of Oakmount Rd",2023,8,1414.5483870967741,43851,31
+"Bloor St W, west of Oakmount Rd",2023,9,1412.8,42384,30
+"Bloor St W, west of Oakmount Rd",2023,10,1001.516129032258,31047,31
+"Bloor St W, west of Oakmount Rd",2023,11,628.9,18867,30
+"Bloor St W, west of Oakmount Rd",2023,12,383.16129032258067,11878,31
+"Bloor St W, west of Oakmount Rd",2024,1,253.5483870967742,7860,31
+"Bloor St W, west of Oakmount Rd",2024,2,439.51724137931035,12746,29
+"Bloor St W, west of Oakmount Rd",2024,3,553.5333333333333,16606,30
+"Bloor St W, west of Oakmount Rd",2024,4,914.2413793103449,26513,29
+"Bloor St W, west of Oakmount Rd",2024,5,1522.7096774193549,47204,31
+"Bloor St W, west of Oakmount Rd",2024,6,1622.2,48666,30
+"Bloor St W, west of Oakmount Rd",2024,7,1793.0645161290322,55585,31
+"Bloor St W, west of Oakmount Rd",2024,8,1635.1290322580646,50689,31
+"Bloor St W, west of Oakmount Rd",2024,9,1642.3333333333333,49270,30
+"Bloor St W, west of Oakmount Rd",2024,10,1360.3225806451612,42170,31
+"Bloor St W, west of Oakmount Rd",2024,11,960.3666666666667,28811,30
+"Bloor St W, west of Oakmount Rd",2024,12,372.7741935483871,11556,31
+"Bloor St W, west of Oakmount Rd",2025,1,251.93548387096774,7810,31
+"Bloor St W, west of Oakmount Rd",2025,2,155.0,4340,28
+"Bloor St W, west of Oakmount Rd",2025,3,269.8,8094,30
+"Bloor St W, west of Oakmount Rd",2025,4,447.1666666666667,13415,30
+"Bloor St W, west of Oakmount Rd",2025,5,763.2,22896,30
+"Bloor St W, west of Oakmount Rd",2025,6,1575.25,12602,8
+"Bloor St W, west of Oakmount Rd",2025,7,1847.6129032258063,57276,31
+"Bloor St W, west of Oakmount Rd",2025,8,1727.8666666666666,51836,30
+"Bloor St W, west of Oakmount Rd",2025,9,1711.9333333333334,51358,30
+"Bloor St W, west of Oakmount Rd",2025,10,1260.0,39060,31
+"Bloor St W, west of Oakmount Rd",2025,11,695.9333333333333,20878,30
+"Bloor St W, west of Oakmount Rd",2025,12,279.4193548387097,8662,31
+"Bloor St W, west of Oakmount Rd",2026,1,135.93548387096774,4214,31
+"Bloor St W, west of Oakmount Rd",2026,2,122.75,3437,28
+"Bloor St W, west of Oakmount Rd",2026,3,409.3333333333333,12280,30
+"Bloor St W, west of Oakmount Rd",2026,4,916.4666666666667,27494,30
+"Keele St, north of Four Winds Dr (multi-use path)",2022,6,83.91666666666667,2014,24
+"Keele St, north of Four Winds Dr (multi-use path)",2022,7,72.90322580645162,2260,31
+"Keele St, north of Four Winds Dr (multi-use path)",2022,8,80.51612903225806,2496,31
+"Keele St, north of Four Winds Dr (multi-use path)",2022,9,83.3,2499,30
+"Keele St, north of Four Winds Dr (multi-use path)",2022,10,106.96774193548387,3316,31
+"Keele St, north of Four Winds Dr (multi-use path)",2022,11,56.56666666666667,1697,30
+"Keele St, north of Four Winds Dr (multi-use path)",2022,12,21.966666666666665,659,30
+"Keele St, north of Four Winds Dr (multi-use path)",2023,1,22.193548387096776,688,31
+"Keele St, north of Four Winds Dr (multi-use path)",2023,2,24.571428571428573,688,28
+"Keele St, north of Four Winds Dr (multi-use path)",2023,3,21.3,639,30
+"Keele St, north of Four Winds Dr (multi-use path)",2023,4,51.2,1536,30
+"Keele St, north of Four Winds Dr (multi-use path)",2023,5,71.64516129032258,2221,31
+"Keele St, north of Four Winds Dr (multi-use path)",2023,6,85.63333333333334,2569,30
+"Keele St, north of Four Winds Dr (multi-use path)",2023,7,127.2258064516129,3944,31
+"Keele St, north of Four Winds Dr (multi-use path)",2023,8,112.80645161290323,3497,31
+"Keele St, north of Four Winds Dr (multi-use path)",2023,9,108.1,3243,30
+"Keele St, north of Four Winds Dr (multi-use path)",2023,10,71.70967741935483,2223,31
+"Keele St, north of Four Winds Dr (multi-use path)",2023,11,54.7,1641,30
+"Keele St, north of Four Winds Dr (multi-use path)",2023,12,37.45161290322581,1161,31
+"Keele St, north of Four Winds Dr (multi-use path)",2024,1,30.806451612903224,955,31
+"Keele St, north of Four Winds Dr (multi-use path)",2024,2,46.0,1334,29
+"Keele St, north of Four Winds Dr (multi-use path)",2024,3,61.5,1845,30
+"Keele St, north of Four Winds Dr (multi-use path)",2024,4,85.42857142857143,2392,28
+"Keele St, north of Four Winds Dr (multi-use path)",2024,5,137.4516129032258,4261,31
+"Keele St, north of Four Winds Dr (multi-use path)",2024,6,126.76666666666667,3803,30
+"Keele St, north of Four Winds Dr (multi-use path)",2024,7,126.79310344827586,3677,29
+"Keele St, north of Four Winds Dr (multi-use path)",2024,8,124.87096774193549,3871,31
+"Keele St, north of Four Winds Dr (multi-use path)",2024,9,135.2,4056,30
+"Keele St, north of Four Winds Dr (multi-use path)",2024,10,113.51612903225806,3519,31
+"Keele St, north of Four Winds Dr (multi-use path)",2024,11,70.03333333333333,2101,30
+"Keele St, north of Four Winds Dr (multi-use path)",2024,12,28.82608695652174,663,23
+"Keele St, north of Four Winds Dr (multi-use path)",2025,3,40.46153846153846,526,13
+"Keele St, north of Four Winds Dr (multi-use path)",2025,4,54.333333333333336,1630,30
+"Keele St, north of Four Winds Dr (multi-use path)",2025,5,52.32258064516129,1622,31
+"Keele St, north of Four Winds Dr (multi-use path)",2025,6,64.8,1944,30
+"Keele St, north of Four Winds Dr (multi-use path)",2025,7,82.87096774193549,2569,31
+"Keele St, north of Four Winds Dr (multi-use path)",2025,8,80.58064516129032,2498,31
+"Keele St, north of Four Winds Dr (multi-use path)",2025,9,86.13333333333334,2584,30
+"Keele St, north of Four Winds Dr (multi-use path)",2025,10,102.58064516129032,3180,31
+"Keele St, north of Four Winds Dr (multi-use path)",2025,11,61.67857142857143,1727,28
+"Keele St, north of Four Winds Dr (multi-use path)",2025,12,22.952380952380953,482,21
+"Keele St, north of Four Winds Dr (multi-use path)",2026,1,20.258064516129032,628,31
+"Keele St, north of Four Winds Dr (multi-use path)",2026,2,10.678571428571429,299,28
+"Keele St, north of Four Winds Dr (multi-use path)",2026,3,32.733333333333334,982,30
+"Keele St, north of Four Winds Dr (multi-use path)",2026,4,51.0,1530,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2022,8,61.46153846153846,1598,26
+"Keele St, south of Sheppard Ave W (multi-use path)",2022,9,49.13333333333333,1474,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2022,10,36.74193548387097,1139,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2022,11,24.133333333333333,724,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2022,12,11.266666666666667,338,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2023,1,10.580645161290322,328,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2023,2,12.142857142857142,340,28
+"Keele St, south of Sheppard Ave W (multi-use path)",2023,3,16.9,507,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2023,4,32.03333333333333,961,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2023,9,60.233333333333334,1807,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2023,10,41.83870967741935,1297,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2023,11,25.3,759,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2023,12,16.225806451612904,503,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,1,12.344827586206897,358,29
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,2,19.413793103448278,563,29
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,3,30.533333333333335,916,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,4,37.4,1122,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,5,70.0,2170,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,6,69.83333333333333,2095,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,7,67.64516129032258,2097,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,8,66.29032258064517,2055,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,9,67.96666666666667,2039,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,10,51.483870967741936,1596,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,11,30.9,927,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2024,12,11.0,341,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,1,9.225806451612904,286,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,2,8.321428571428571,233,28
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,3,21.866666666666667,656,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,4,29.066666666666666,872,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,5,49.935483870967744,1548,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,6,57.333333333333336,1720,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,7,56.83870967741935,1762,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,8,62.03225806451613,1923,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,9,66.76666666666667,2003,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,10,52.516129032258064,1628,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,11,23.366666666666667,701,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2025,12,6.580645161290323,204,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2026,1,4.67741935483871,145,31
+"Keele St, south of Sheppard Ave W (multi-use path)",2026,2,8.035714285714286,225,28
+"Keele St, south of Sheppard Ave W (multi-use path)",2026,3,17.933333333333334,538,30
+"Keele St, south of Sheppard Ave W (multi-use path)",2026,4,37.63333333333333,1129,30
+"Millwood Rd, north of Pape Ave/Donlands Ave",2025,1,147.1290322580645,4561,31
+"Millwood Rd, north of Pape Ave/Donlands Ave",2025,2,130.67857142857142,3659,28
+"Millwood Rd, north of Pape Ave/Donlands Ave",2025,7,981.0,981,1
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2022,5,48.0,48,1
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2022,6,42.96666666666667,1289,30
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2022,7,44.83870967741935,1390,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2022,8,49.225806451612904,1526,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2022,9,38.56666666666667,1157,30
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2022,10,21.580645161290324,669,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2022,11,15.466666666666667,464,30
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2022,12,8.882352941176471,151,17
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,1,6.45,129,20
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,2,6.933333333333334,104,15
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,3,9.125,219,24
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,4,18.733333333333334,562,30
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,5,37.516129032258064,1163,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,6,47.86666666666667,1436,30
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,7,47.774193548387096,1481,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,8,56.516129032258064,1752,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,9,50.6,1518,30
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,10,42.354838709677416,1313,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,11,28.366666666666667,851,30
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2023,12,15.903225806451612,493,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,1,15.066666666666666,452,30
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,2,18.88888888888889,510,27
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,3,15.37037037037037,415,27
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,4,20.76923076923077,540,26
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,5,38.87096774193548,1205,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,6,43.75,1225,28
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,7,45.41935483870968,1408,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,8,44.0,1364,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,9,45.166666666666664,1355,30
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,10,35.903225806451616,1113,31
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,11,25.933333333333334,778,30
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2024,12,16.2,81,5
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2025,7,56.0,56,1
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2025,8,44.333333333333336,266,6
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2026,1,3.3333333333333335,70,21
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2026,2,2.4,60,25
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2026,3,9.153846153846153,238,26
+"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",2026,4,19.033333333333335,571,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2023,3,4.2,21,5
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2023,4,16.433333333333334,493,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2023,5,28.387096774193548,880,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2023,6,34.333333333333336,1030,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2023,7,41.32258064516129,1281,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2023,8,40.12903225806452,1244,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2023,9,33.30769230769231,866,26
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2023,10,24.580645161290324,762,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2023,11,11.6,348,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2023,12,5.387096774193548,167,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,1,5.1,153,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,2,9.758620689655173,283,29
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,3,11.366666666666667,341,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,4,17.0,493,29
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,5,32.483870967741936,1007,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,6,37.266666666666666,1118,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,7,41.774193548387096,1295,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,8,39.935483870967744,1238,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,9,29.566666666666666,887,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,10,21.70967741935484,673,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,11,12.733333333333333,382,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2024,12,4.304347826086956,99,23
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2025,1,1.2580645161290323,39,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2025,2,0.0,0,28
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2025,3,6.733333333333333,202,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2025,4,15.6,468,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2025,5,13.709677419354838,425,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2025,6,11.6,348,30
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2025,7,14.935483870967742,463,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2025,8,17.64516129032258,547,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2025,9,22.2,111,5
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2025,10,13.96774193548387,433,31
+"Sheppard Ave W, west of Sentinel Rd (multi-use path)",2025,11,7.615384615384615,198,26
+"Sherbourne St, north of Gerrard St",2022,11,708.0588235294117,12037,17
+"Sherbourne St, north of Gerrard St",2022,12,613.9032258064516,19031,31
+"Sherbourne St, north of Gerrard St",2023,1,545.0645161290323,16897,31
+"Sherbourne St, north of Gerrard St",2023,2,538.6071428571429,15081,28
+"Sherbourne St, north of Gerrard St",2023,3,652.6,19578,30
+"Sherbourne St, north of Gerrard St",2023,4,1208.8666666666666,36266,30
+"Sherbourne St, north of Gerrard St",2023,5,1831.9032258064517,56789,31
+"Sherbourne St, north of Gerrard St",2023,6,2035.7666666666667,61073,30
+"Sherbourne St, north of Gerrard St",2023,7,2101.967741935484,65161,31
+"Sherbourne St, north of Gerrard St",2023,8,2138.548387096774,66295,31
+"Sherbourne St, north of Gerrard St",2023,9,2162.7,64881,30
+"Sherbourne St, north of Gerrard St",2023,10,1721.0967741935483,53354,31
+"Sherbourne St, north of Gerrard St",2023,11,1262.4,37872,30
+"Sherbourne St, north of Gerrard St",2023,12,821.3225806451613,25461,31
+"Sherbourne St, north of Gerrard St",2024,1,654.9032258064516,20302,31
+"Sherbourne St, north of Gerrard St",2024,2,888.6206896551724,25770,29
+"Sherbourne St, north of Gerrard St",2024,3,1000.2333333333333,30007,30
+"Sherbourne St, north of Gerrard St",2024,4,1264.5,37935,30
+"Sherbourne St, north of Gerrard St",2024,5,1954.2903225806451,60583,31
+"Sherbourne St, north of Gerrard St",2024,6,2188.266666666667,65648,30
+"Sherbourne St, north of Gerrard St",2024,7,2266.935483870968,70275,31
+"Sherbourne St, north of Gerrard St",2024,8,2100.8387096774195,65126,31
+"Sherbourne St, north of Gerrard St",2024,9,2201.9333333333334,66058,30
+"Sherbourne St, north of Gerrard St",2024,10,1955.0645161290322,60607,31
+"Sherbourne St, north of Gerrard St",2024,11,1544.7,46341,30
+"Sherbourne St, north of Gerrard St",2024,12,850.4516129032259,26364,31
+"Sherbourne St, north of Gerrard St",2025,1,681.0967741935484,21114,31
+"Sherbourne St, north of Gerrard St",2025,2,354.85714285714283,9936,28
+"Sherbourne St, north of Gerrard St",2025,3,937.0333333333333,28111,30
+"Sherbourne St, north of Gerrard St",2025,4,1275.0333333333333,38251,30
+"Sherbourne St, north of Gerrard St",2025,5,1596.9354838709678,49505,31
+"Sherbourne St, north of Gerrard St",2025,6,2093.5666666666666,62807,30
+"Sherbourne St, north of Gerrard St",2025,7,2301.7741935483873,71355,31
+"Sherbourne St, north of Gerrard St",2025,8,2154.0967741935483,66777,31
+"Sherbourne St, north of Gerrard St",2025,9,2231.551724137931,64715,29
+"Sherbourne St, north of Gerrard St",2025,10,1845.967741935484,57225,31
+"Sherbourne St, north of Gerrard St",2025,11,1261.4666666666667,37844,30
+"Sherbourne St, north of Gerrard St",2025,12,607.9354838709677,18846,31
+"Sherbourne St, north of Gerrard St",2026,1,319.80645161290323,9914,31
+"Sherbourne St, north of Gerrard St",2026,2,220.78571428571428,6182,28
+"Sherbourne St, north of Gerrard St",2026,3,697.9666666666667,20939,30
+"Sherbourne St, north of Gerrard St",2026,4,1157.2666666666667,34718,30
+"Sherbourne St, north of Wellesley St E",2022,11,697.25,11156,16
+"Sherbourne St, north of Wellesley St E",2022,12,620.9354838709677,19249,31
+"Sherbourne St, north of Wellesley St E",2023,1,562.9677419354839,17452,31
+"Sherbourne St, north of Wellesley St E",2023,2,558.2142857142857,15630,28
+"Sherbourne St, north of Wellesley St E",2023,3,666.4333333333333,19993,30
+"Sherbourne St, north of Wellesley St E",2023,4,1268.4333333333334,38053,30
+"Sherbourne St, north of Wellesley St E",2023,5,1874.1612903225807,58099,31
+"Sherbourne St, north of Wellesley St E",2023,6,2046.8666666666666,61406,30
+"Sherbourne St, north of Wellesley St E",2023,7,2017.8064516129032,62552,31
+"Sherbourne St, north of Wellesley St E",2023,8,2059.1290322580644,63833,31
+"Sherbourne St, north of Wellesley St E",2023,9,2215.766666666667,66473,30
+"Sherbourne St, north of Wellesley St E",2023,10,1823.5483870967741,56530,31
+"Sherbourne St, north of Wellesley St E",2023,11,1345.6,40368,30
+"Sherbourne St, north of Wellesley St E",2023,12,904.8064516129032,28049,31
+"Sherbourne St, north of Wellesley St E",2024,1,781.8387096774194,24237,31
+"Sherbourne St, north of Wellesley St E",2024,2,1088.7931034482758,31575,29
+"Sherbourne St, north of Wellesley St E",2024,3,1193.9333333333334,35818,30
+"Sherbourne St, north of Wellesley St E",2024,4,1499.1,44973,30
+"Sherbourne St, north of Wellesley St E",2024,5,2302.935483870968,71391,31
+"Sherbourne St, north of Wellesley St E",2024,6,2534.0,76020,30
+"Sherbourne St, north of Wellesley St E",2024,7,2596.0,80476,31
+"Sherbourne St, north of Wellesley St E",2024,8,2460.6451612903224,76280,31
+"Sherbourne St, north of Wellesley St E",2024,9,2582.3333333333335,77470,30
+"Sherbourne St, north of Wellesley St E",2024,10,2276.935483870968,70585,31
+"Sherbourne St, north of Wellesley St E",2024,11,1780.6,53418,30
+"Sherbourne St, north of Wellesley St E",2024,12,1002.0645161290323,31064,31
+"Sherbourne St, north of Wellesley St E",2025,1,825.0322580645161,25576,31
+"Sherbourne St, north of Wellesley St E",2025,2,505.67857142857144,14159,28
+"Sherbourne St, north of Wellesley St E",2025,3,1064.0333333333333,31921,30
+"Sherbourne St, north of Wellesley St E",2025,4,1411.1,42333,30
+"Sherbourne St, north of Wellesley St E",2025,5,1768.3870967741937,54820,31
+"Sherbourne St, north of Wellesley St E",2025,6,2245.366666666667,67361,30
+"Sherbourne St, north of Wellesley St E",2025,7,2442.8387096774195,75728,31
+"Sherbourne St, north of Wellesley St E",2025,8,2246.9032258064517,69654,31
+"Sherbourne St, north of Wellesley St E",2025,9,2357.5,70725,30
+"Sherbourne St, north of Wellesley St E",2025,10,1942.1612903225807,60207,31
+"Sherbourne St, north of Wellesley St E",2025,11,1288.8333333333333,38665,30
+"Sherbourne St, north of Wellesley St E",2025,12,664.3870967741935,20596,31
+"Sherbourne St, north of Wellesley St E",2026,1,389.80645161290323,12084,31
+"Sherbourne St, north of Wellesley St E",2026,2,291.85714285714283,8172,28
+"Sherbourne St, north of Wellesley St E",2026,3,804.7666666666667,24143,30
+"Sherbourne St, north of Wellesley St E",2026,4,1280.0,38400,30
+"Yonge St, north of Bloor St",2022,10,1261.2,6306,5
+"Yonge St, north of Bloor St",2022,11,885.4333333333333,26563,30
+"Yonge St, north of Bloor St",2022,12,580.258064516129,17988,31
+"Yonge St, north of Bloor St",2023,1,515.6774193548387,15986,31
+"Yonge St, north of Bloor St",2023,2,566.5357142857143,15863,28
+"Yonge St, north of Bloor St",2023,3,604.5666666666667,18137,30
+"Yonge St, north of Bloor St",2023,4,1067.0,32010,30
+"Yonge St, north of Bloor St",2023,5,1480.5806451612902,45898,31
+"Yonge St, north of Bloor St",2023,6,1680.8666666666666,50426,30
+"Yonge St, north of Bloor St",2023,7,1686.741935483871,52289,31
+"Yonge St, north of Bloor St",2023,8,1721.9354838709678,53380,31
+"Yonge St, north of Bloor St",2023,9,1519.3,45579,30
+"Yonge St, north of Bloor St",2023,10,1414.225806451613,43841,31
+"Yonge St, north of Bloor St",2023,11,1220.3666666666666,36611,30
+"Yonge St, north of Bloor St",2023,12,921.8387096774194,28577,31
+"Yonge St, north of Bloor St",2024,1,771.9354838709677,23930,31
+"Yonge St, north of Bloor St",2024,2,1114.448275862069,32319,29
+"Yonge St, north of Bloor St",2024,3,1236.3,37089,30
+"Yonge St, north of Bloor St",2024,4,1352.7,40581,30
+"Yonge St, north of Bloor St",2024,5,2044.0,63364,31
+"Yonge St, north of Bloor St",2024,6,2250.7,67521,30
+"Yonge St, north of Bloor St",2024,7,2223.3225806451615,68923,31
+"Yonge St, north of Bloor St",2024,8,2299.7096774193546,71291,31
+"Yonge St, north of Bloor St",2024,9,2294.3,68829,30
+"Yonge St, north of Bloor St",2024,10,2148.5806451612902,66606,31
+"Yonge St, north of Bloor St",2024,11,1864.6,55938,30
+"Yonge St, north of Bloor St",2024,12,1152.8387096774193,35738,31
+"Yonge St, north of Bloor St",2025,1,1030.6129032258063,31949,31
+"Yonge St, north of Bloor St",2025,2,793.0714285714286,22206,28
+"Yonge St, north of Bloor St",2025,3,1381.0333333333333,41431,30
+"Yonge St, north of Bloor St",2025,4,1704.0666666666666,51122,30
+"Yonge St, north of Bloor St",2025,5,2085.9032258064517,64663,31
+"Yonge St, north of Bloor St",2025,6,2313.1666666666665,69395,30
+"Yonge St, north of Bloor St",2025,7,2370.935483870968,73499,31
+"Yonge St, north of Bloor St",2025,8,2237.548387096774,69364,31
+"Yonge St, north of Bloor St",2025,9,2339.9,70197,30
+"Yonge St, north of Bloor St",2025,10,1950.032258064516,60451,31
+"Yonge St, north of Bloor St",2025,11,1416.6666666666667,42500,30
+"Yonge St, north of Bloor St",2025,12,909.516129032258,28195,31
+"Yonge St, north of Bloor St",2026,1,549.9677419354839,17049,31
+"Yonge St, north of Bloor St",2026,2,402.64285714285717,11274,28
+"Yonge St, north of Bloor St",2026,3,940.1333333333333,28204,30
+"Yonge St, north of Bloor St",2026,4,1293.1,38793,30
+"Yonge St, north of Davenport Rd",2022,11,379.0,6443,17
+"Yonge St, north of Davenport Rd",2022,12,293.258064516129,9091,31
+"Yonge St, north of Davenport Rd",2023,1,269.48387096774195,8354,31
+"Yonge St, north of Davenport Rd",2023,2,248.4814814814815,6709,27
+"Yonge St, north of Davenport Rd",2023,3,334.4,10032,30
+"Yonge St, north of Davenport Rd",2023,4,648.9,19467,30
+"Yonge St, north of Davenport Rd",2023,5,941.3870967741935,29183,31
+"Yonge St, north of Davenport Rd",2023,6,1023.9,30717,30
+"Yonge St, north of Davenport Rd",2023,7,1026.3548387096773,31817,31
+"Yonge St, north of Davenport Rd",2023,8,1043.6129032258063,32352,31
+"Yonge St, north of Davenport Rd",2023,9,952.2,28566,30
+"Yonge St, north of Davenport Rd",2023,10,817.6774193548387,25348,31
+"Yonge St, north of Davenport Rd",2023,11,581.9,17457,30
+"Yonge St, north of Davenport Rd",2023,12,401.38709677419354,12443,31
+"Yonge St, north of Davenport Rd",2024,1,460.64516129032256,14280,31
+"Yonge St, north of Davenport Rd",2024,2,877.2413793103449,25440,29
+"Yonge St, north of Davenport Rd",2024,3,949.0666666666667,28472,30
+"Yonge St, north of Davenport Rd",2024,4,1209.5,36285,30
+"Yonge St, north of Davenport Rd",2024,5,1969.0,61039,31
+"Yonge St, north of Davenport Rd",2024,6,2163.633333333333,64909,30
+"Yonge St, north of Davenport Rd",2024,7,2191.6451612903224,67941,31
+"Yonge St, north of Davenport Rd",2024,8,2086.1612903225805,64671,31
+"Yonge St, north of Davenport Rd",2024,9,2376.9666666666667,71309,30
+"Yonge St, north of Davenport Rd",2024,10,2191.483870967742,67936,31
+"Yonge St, north of Davenport Rd",2024,11,1697.8666666666666,50936,30
+"Yonge St, north of Davenport Rd",2024,12,1031.9354838709678,31990,31
+"Yonge St, north of Davenport Rd",2025,1,834.8387096774194,25880,31
+"Yonge St, north of Davenport Rd",2025,2,499.0357142857143,13973,28
+"Yonge St, north of Davenport Rd",2025,3,1116.5,33495,30
+"Yonge St, north of Davenport Rd",2025,4,1617.5,48525,30
+"Yonge St, north of Davenport Rd",2025,5,2021.3666666666666,60641,30
+"Yonge St, north of Davenport Rd",2025,6,2355.233333333333,70657,30
+"Yonge St, north of Davenport Rd",2025,7,2442.6129032258063,75721,31
+"Yonge St, north of Davenport Rd",2025,8,2293.6129032258063,71102,31
+"Yonge St, north of Davenport Rd",2025,9,2310.733333333333,69322,30
+"Yonge St, north of Davenport Rd",2025,10,1871.9032258064517,58029,31
+"Yonge St, north of Davenport Rd",2025,11,1303.2,39096,30
+"Yonge St, north of Davenport Rd",2025,12,707.258064516129,21925,31
+"Yonge St, north of Davenport Rd",2026,1,432.80645161290323,13417,31
+"Yonge St, north of Davenport Rd",2026,2,341.32142857142856,9557,28
+"Yonge St, north of Davenport Rd",2026,3,723.5,21705,30
+"Yonge St, north of Davenport Rd",2026,4,1107.0,33210,30
+"Yonge St, north of Macpherson Ave",2022,11,287.1764705882353,4882,17
+"Yonge St, north of Macpherson Ave",2022,12,202.32258064516128,6272,31
+"Yonge St, north of Macpherson Ave",2023,1,185.6451612903226,5755,31
+"Yonge St, north of Macpherson Ave",2023,2,185.53571428571428,5195,28
+"Yonge St, north of Macpherson Ave",2023,3,232.36666666666667,6971,30
+"Yonge St, north of Macpherson Ave",2023,4,429.23333333333335,12877,30
+"Yonge St, north of Macpherson Ave",2023,5,652.6774193548387,20233,31
+"Yonge St, north of Macpherson Ave",2023,6,668.3,20049,30
+"Yonge St, north of Macpherson Ave",2023,7,602.9354838709677,18691,31
+"Yonge St, north of Macpherson Ave",2023,8,631.6774193548387,19582,31
+"Yonge St, north of Macpherson Ave",2023,9,694.0,20820,30
+"Yonge St, north of Macpherson Ave",2023,10,596.0645161290323,18478,31
+"Yonge St, north of Macpherson Ave",2023,11,414.6,12438,30
+"Yonge St, north of Macpherson Ave",2023,12,286.48387096774195,8881,31
+"Yonge St, north of Macpherson Ave",2024,1,226.83870967741936,7032,31
+"Yonge St, north of Macpherson Ave",2024,2,360.3103448275862,10449,29
+"Yonge St, north of Macpherson Ave",2024,3,395.2,11856,30
+"Yonge St, north of Macpherson Ave",2024,4,525.8,15774,30
+"Yonge St, north of Macpherson Ave",2024,5,874.7096774193549,27116,31
+"Yonge St, north of Macpherson Ave",2024,6,1174.9333333333334,35248,30
+"Yonge St, north of Macpherson Ave",2024,7,1993.032258064516,61784,31
+"Yonge St, north of Macpherson Ave",2024,8,1951.0,60481,31
+"Yonge St, north of Macpherson Ave",2024,9,2204.4666666666667,66134,30
+"Yonge St, north of Macpherson Ave",2024,10,1966.258064516129,60954,31
+"Yonge St, north of Macpherson Ave",2024,11,1488.1333333333334,44644,30
+"Yonge St, north of Macpherson Ave",2024,12,734.5806451612904,22772,31
+"Yonge St, north of Macpherson Ave",2025,1,536.3225806451613,16626,31
+"Yonge St, north of Macpherson Ave",2025,2,300.2142857142857,8406,28
+"Yonge St, north of Macpherson Ave",2025,3,815.1666666666666,24455,30
+"Yonge St, north of Macpherson Ave",2025,4,1327.6333333333334,39829,30
+"Yonge St, north of Macpherson Ave",2025,5,1804.225806451613,55931,31
+"Yonge St, north of Macpherson Ave",2025,6,2059.5,61785,30
+"Yonge St, north of Macpherson Ave",2025,7,2087.5416666666665,50101,24
+"Yonge St, north of Macpherson Ave",2026,3,634.0454545454545,13949,22
+"Yonge St, north of Macpherson Ave",2026,4,1188.7,35661,30
+"Yonge St, north of St Clair Ave",2022,11,411.2352941176471,6991,17
+"Yonge St, north of St Clair Ave",2022,12,303.5483870967742,9410,31
+"Yonge St, north of St Clair Ave",2023,1,225.16129032258064,6980,31
+"Yonge St, north of St Clair Ave",2023,2,261.35714285714283,7318,28
+"Yonge St, north of St Clair Ave",2023,3,315.6,9468,30
+"Yonge St, north of St Clair Ave",2023,4,735.6333333333333,22069,30
+"Yonge St, north of St Clair Ave",2023,5,1110.0967741935483,34413,31
+"Yonge St, north of St Clair Ave",2023,6,1257.2666666666667,37718,30
+"Yonge St, north of St Clair Ave",2023,7,1251.4516129032259,38795,31
+"Yonge St, north of St Clair Ave",2023,8,1293.0645161290322,40085,31
+"Yonge St, north of St Clair Ave",2023,9,1283.1666666666667,38495,30
+"Yonge St, north of St Clair Ave",2023,10,1046.8709677419354,32453,31
+"Yonge St, north of St Clair Ave",2023,11,718.1333333333333,21544,30
+"Yonge St, north of St Clair Ave",2023,12,433.51612903225805,13439,31
+"Yonge St, north of St Clair Ave",2024,1,437.3225806451613,13557,31
+"Yonge St, north of St Clair Ave",2024,2,699.6206896551724,20289,29
+"Yonge St, north of St Clair Ave",2024,3,733.2,21996,30
+"Yonge St, north of St Clair Ave",2024,4,927.3333333333334,27820,30
+"Yonge St, north of St Clair Ave",2024,5,1452.0967741935483,45015,31
+"Yonge St, north of St Clair Ave",2024,6,1610.5333333333333,48316,30
+"Yonge St, north of St Clair Ave",2024,7,1607.225806451613,49824,31
+"Yonge St, north of St Clair Ave",2024,8,1541.0,47771,31
+"Yonge St, north of St Clair Ave",2024,9,1773.7666666666667,53213,30
+"Yonge St, north of St Clair Ave",2024,10,1615.258064516129,50073,31
+"Yonge St, north of St Clair Ave",2024,11,1362.5,40875,30
+"Yonge St, north of St Clair Ave",2024,12,824.483870967742,25559,31
+"Yonge St, north of St Clair Ave",2025,1,683.6129032258065,21192,31
+"Yonge St, north of St Clair Ave",2025,2,410.7142857142857,11500,28
+"Yonge St, north of St Clair Ave",2025,3,810.2,24306,30
+"Yonge St, north of St Clair Ave",2025,4,1165.5,34965,30
+"Yonge St, north of St Clair Ave",2025,5,1469.8387096774193,45565,31
+"Yonge St, north of St Clair Ave",2025,6,1546.2,46386,30
+"Yonge St, north of St Clair Ave",2025,7,1638.4193548387098,50791,31
+"Yonge St, north of St Clair Ave",2025,8,1507.3548387096773,46728,31
+"Yonge St, north of St Clair Ave",2025,9,1614.4666666666667,48434,30
+"Yonge St, north of St Clair Ave",2025,10,1316.8064516129032,40821,31
+"Yonge St, north of St Clair Ave",2025,11,884.1333333333333,26524,30
+"Yonge St, north of St Clair Ave",2025,12,520.3548387096774,16131,31
+"Yonge St, north of St Clair Ave",2026,1,293.16129032258067,9088,31
+"Yonge St, north of St Clair Ave",2026,2,239.21428571428572,6698,28
+"Yonge St, north of St Clair Ave",2026,3,536.7666666666667,16103,30
+"Yonge St, north of St Clair Ave",2026,4,834.2666666666667,25028,30
+"Yonge St, south of Davisville Ave",2022,11,224.47058823529412,3816,17
+"Yonge St, south of Davisville Ave",2022,12,200.8709677419355,6227,31
+"Yonge St, south of Davisville Ave",2023,1,143.1290322580645,4437,31
+"Yonge St, south of Davisville Ave",2023,2,156.53571428571428,4383,28
+"Yonge St, south of Davisville Ave",2023,3,194.53333333333333,5836,30
+"Yonge St, south of Davisville Ave",2023,4,449.76666666666665,13493,30
+"Yonge St, south of Davisville Ave",2023,5,719.516129032258,22305,31
+"Yonge St, south of Davisville Ave",2023,6,816.3,24489,30
+"Yonge St, south of Davisville Ave",2023,7,820.4193548387096,25433,31
+"Yonge St, south of Davisville Ave",2023,8,880.0645161290323,27282,31
+"Yonge St, south of Davisville Ave",2023,9,882.4333333333333,26473,30
+"Yonge St, south of Davisville Ave",2023,10,690.8709677419355,21417,31
+"Yonge St, south of Davisville Ave",2023,11,484.6333333333333,14539,30
+"Yonge St, south of Davisville Ave",2023,12,297.7096774193548,9229,31
+"Yonge St, south of Davisville Ave",2024,1,236.51612903225808,7332,31
+"Yonge St, south of Davisville Ave",2024,2,419.82758620689657,12175,29
+"Yonge St, south of Davisville Ave",2024,3,534.9666666666667,16049,30
+"Yonge St, south of Davisville Ave",2024,4,653.448275862069,18950,29
+"Yonge St, south of Davisville Ave",2024,5,1065.0645161290322,33017,31
+"Yonge St, south of Davisville Ave",2024,6,1218.3,36549,30
+"Yonge St, south of Davisville Ave",2024,7,1254.967741935484,38904,31
+"Yonge St, south of Davisville Ave",2024,8,1229.8387096774193,38125,31
+"Yonge St, south of Davisville Ave",2024,9,1266.7333333333333,38002,30
+"Yonge St, south of Davisville Ave",2024,10,1172.3548387096773,36343,31
+"Yonge St, south of Davisville Ave",2024,11,944.1176470588235,16050,17
+"Yonge St, south of Davisville Ave",2025,1,322.93548387096774,10011,31
+"Yonge St, south of Davisville Ave",2025,2,177.57142857142858,4972,28
+"Yonge St, south of Davisville Ave",2025,3,489.0,14670,30
+"Yonge St, south of Davisville Ave",2025,4,754.8666666666667,22646,30
+"Yonge St, south of Davisville Ave",2025,5,1063.1612903225807,32958,31
+"Yonge St, south of Davisville Ave",2025,6,1236.4,37092,30
+"Yonge St, south of Davisville Ave",2025,7,1337.608695652174,30765,23
+"Yonge St, south of Davisville Ave",2025,8,1248.448275862069,36205,29
+"Yonge St, south of Davisville Ave",2025,9,1264.8333333333333,37945,30
+"Yonge St, south of Davisville Ave",2025,10,1021.0645161290323,31653,31
+"Yonge St, south of Davisville Ave",2025,11,643.3333333333334,19300,30
+"Yonge St, south of Davisville Ave",2025,12,301.0,9331,31
+"Yonge St, south of Davisville Ave",2026,1,133.80645161290323,4148,31
+"Yonge St, south of Davisville Ave",2026,2,135.85714285714286,3804,28
+"Yonge St, south of Davisville Ave",2026,3,348.43333333333334,10453,30
+"Yonge St, south of Davisville Ave",2026,4,632.5666666666667,18977,30

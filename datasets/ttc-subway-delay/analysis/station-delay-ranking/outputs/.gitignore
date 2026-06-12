@@ -1,0 +1,4 @@
+# Generated outputs from analyze.py
+*.png
+!station-delay-summary.csv
+!station-cause-breakdown.csv

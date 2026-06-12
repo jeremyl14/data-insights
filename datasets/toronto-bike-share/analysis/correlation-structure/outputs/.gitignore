@@ -1,0 +1,6 @@
+# Generated outputs from analyze.py
+*.png
+!ccf-results.csv
+!partial-correlations.csv
+!raw-correlation-matrix.csv
+!raw-correlation-pvalues.csv

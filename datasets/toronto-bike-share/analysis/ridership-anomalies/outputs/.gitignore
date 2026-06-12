@@ -1,0 +1,4 @@
+# Generated outputs from analyze.py
+*.png
+!dip-events.csv
+!daily-rides.csv

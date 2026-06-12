@@ -1,0 +1,882 @@
+station_name,departures,arrivals,net_flow
+1 Market St,9062,9303,-241
+101 Cedarvale Ave,3426,1192,2234
+11 Spadina Rd,10426,7338,3088
+111 Bond St (North of Dundas St E)  - SMART,7062,7146,-84
+111 Broadview Ave,10037,9574,463
+12 Harbour St,13600,13895,-295
+128 Sterling Rd - SMART,5382,5273,109
+1303 Yonge St - SMART,4501,4554,-53
+135 Queens Wharf Rd - SMART,4882,4981,-99
+14 Arundel Ave,7100,6611,489
+144 Harrison St,3662,3811,-149
+15 Price St,4722,2761,1961
+1525 Dundas St W,9502,9767,-265
+16 Riverview Gardens,2,1,1
+161 Bleecker St (South of Wellesley),6107,3952,2155
+1612 Danforth Ave,3687,1952,1735
+165 McRae Dr,712,716,-4
+19 Glendora Ave,1170,1039,131
+190 Queens Quay E,10581,10940,-359
+1926 Lake Shore Blvd W,3185,3296,-111
+2 Church St,1,8,-7
+20 Charles St E,17334,10952,6382
+20 Eaton Ave,13,10,3
+200 Bloor St E,6118,4427,1691
+2201 Dundas St W,3877,3906,-29
+2300 Lakeshore Blvd W,632,665,-33
+24 Mountjoy Ave,1583,1178,405
+25 Booth Ave,5309,6606,-1297
+25 York St _ Union Station South,7235,7241,-6
+265 Armadale Ave,5531,2853,2678
+2700 Eglinton Ave W,688,322,366
+285 Victoria St,10962,13679,-2717
+3220 Bloor St W,3,5,-2
+35 Erindale Ave,5471,1455,4016
+36 Park Lawn Rd,3679,3824,-145
+365 Lippincott St,15372,7431,7941
+406 Oakwood Ave,1197,1203,-6
+420 Wellington St W,23612,24261,-649
+439 Sherbourne St,14726,9697,5029
+457 King St W,11651,11815,-164
+50 Overlea Blvd,968,1118,-150
+51 Parliament St,4865,5225,-360
+519 Church St,3075,3134,-59
+541 Huron St - SMART,12385,10967,1418
+552 Birchmount Rd,243,214,29
+60 Broadway Ave,1233,1106,127
+60 Carl Hall Rd - SMART,578,579,-1
+697 Lansdowne Ave,8838,5750,3088
+75 Holly St,4584,2115,2469
+75 Tandridge Cres,125,110,15
+75 Thorncliffe Park Dr,617,646,-29
+80 Clinton St,15339,15691,-352
+800 Fleet St (North),10882,8057,2825
+800 Fleet St (South),8983,7000,1983
+85 Lee Ave,4785,5381,-596
+91 Via Italia,5842,3578,2264
+Adelaide St E / Parliament St,6644,6601,43
+Adelaide St W / Bay St,6869,7442,-573
+Adelaide St W / Bay St (South),2685,2445,240
+Adelaide St W / Strachan Ave,11829,11882,-53
+Adelaide St W / Yonge St,9837,9807,30
+Adelaide St W / York St,5641,5274,367
+Alameda Ave / Vaughan Rd - SMART,718,620,98
+Albany Ave / Bloor St W,16696,15781,915
+Albany Ave / Dupont St,2086,2061,25
+Albion Rd/ Arcot Blvd,349,338,11
+Alma Ave / Gladstone Ave SMART,9071,9338,-267
+Alton Ave / Dundas St E (Greenwood Park),4282,5048,-766
+Alvin Ave / St. Clair Ave E,2719,2340,379
+Amelia St / Sumach St,4496,4556,-60
+Amos Waites Park,2728,2901,-173
+Amroth Ave / Danforth Ave,2881,2430,451
+Annette St / Dundas St W,3250,3202,48
+Annette St / Jane St,2758,2830,-72
+Antler St / Campbell Ave - SMART,2777,2621,156
+Arlington Parkette,854,869,-15
+Armel Ct / Albion Rd,298,316,-18
+Armoury St / Chestnut St,16314,16509,-195
+Augusta Ave / Denison Sq,16596,16974,-378
+Augusta Ave / Dundas St W,17855,17915,-60
+Avenue Rd / Cumberland St,16922,16113,809
+Avenue Rd / Macpherson Ave,2989,2882,107
+Avenue Rd / Oxton Ave,746,711,35
+Baldwin St / Henry St,16528,16656,-128
+Baldwin St / Spadina Ave - SMART,35932,36374,-442
+Balliol St / Yonge St - SMART,4046,1817,2229
+Bartlett Parkette,9572,9454,118
+Bartley Park,483,512,-29
+Barton Ave / Howland Ave - SMART,7795,6516,1279
+Bathurst St / Adelaide St W,24944,24984,-40
+Bathurst St / Dundas St W,17780,17760,20
+Bathurst St / Fort York Blvd,16015,16108,-93
+Bathurst St / Front St W,31360,31852,-492
+Bathurst St / Housey St,9860,10222,-362
+Bathurst St / Lennox St,12931,12448,483
+Bathurst St/Queens Quay(Billy Bishop Airport),24956,29517,-4561
+Bathurst Subway Station,9270,7528,1742
+Bay St / Albert St,19047,20545,-1498
+Bay St / Bloor St W (East Side),19257,19066,191
+Bay St / Bloor St W (West Side),12512,10678,1834
+Bay St / Charles St W - SMART,17326,14910,2416
+Bay St / College St (East Side),52522,52223,299
+Bay St / College St (West Side) - SMART,15964,15572,392
+Bay St / Dundas St W,26108,28325,-2217
+Bay St / Harbour St,14051,14664,-613
+Bay St / Queens Quay W (Ferry Terminal),37661,39195,-1534
+Bay St / Scollard St,6558,5776,782
+Bay St / St. Joseph St,18040,16736,1304
+Bay St / Wellesley St W,42887,27135,15752
+Bayview Ave / Finch Recreational Trail,206,204,2
+Bayview Ave / Lawren Harris Square,12251,12436,-185
+Beaty Ave / Queen St W,7449,7650,-201
+Bellamy Rd N / The Meadoway,70,65,5
+Bellamy Rd S / Kingston Rd,147,156,-9
+Bellwoods Ave / Treford Pl - SMART,8655,8865,-210
+Beltline Trail / Chaplin Cres,1808,1884,-76
+Beltline Trail / Yonge St,2709,2715,-6
+Benshire Dr / The Meadoway,115,114,1
+Berkeley St / Adelaide St E - SMART,11372,11493,-121
+Berkeley St / Dundas St E - SMART,6703,6692,11
+Berry Rd / Bell Manor Dr,1125,1186,-61
+Bert Robinson Park,802,877,-75
+Beverley St / College St,15177,14780,397
+Beverley St / Dundas St W,28546,29680,-1134
+Bike Shop Test Station,0,43,-43
+Birchcliff Ave / Kingston Rd,338,357,-19
+Birchmount Rd / Kingston Rd,399,413,-14
+Blake St / Boultbee Ave,3515,3583,-68
+Blantyre Park,1009,1032,-23
+Bleecker St / St James Ave,15129,10782,4347
+Bloor St E / Huntley St - SMART,17540,17680,-140
+Bloor St E / Parliament St,8545,8511,34
+Bloor St W / Balmuto St,11941,11494,447
+Bloor St W / Brock Ave,6359,6449,-90
+Bloor St W / Christie St,17495,16959,536
+Bloor St W / Dundas St W,11640,11786,-146
+Bloor St W / Dundas St W (2),1133,1263,-130
+Bloor St W / Gladstone Ave - SMART,8194,8285,-91
+Bloor St W / High Park Ave (High Park),5136,4576,560
+Bloor St W / Huron St,3785,2931,854
+Bloor St W / Kingsmill Rd,617,549,68
+Bloor St W / Manning Ave - SMART,23351,20589,2762
+Bloor St W / Old Mill Trl,1432,1506,-74
+Bloor St W / Pacific Ave,4898,5050,-152
+Bloor St W / Riverside Dr,1102,1106,-4
+Bloor St W / Shaw St - SMART,18957,16825,2132
+Blythwood Rd / Yonge St - SMART,1380,1385,-5
+Bond Ave / Don Mills Trail,85,85,0
+Bond St / Queen St E,24026,26525,-2499
+Boston Ave / Queen St E- SMART,2762,3365,-603
+Braemar Ave / Eglinton Ave W,1284,1240,44
+Brahms Ave / Finch Ave E,117,122,-5
+Bremner Blvd / Rees St,19735,20397,-662
+Briar Hill Ave / Yonge St - SMART,1624,1620,4
+Brick Works,5939,6234,-295
+Bridgman Ave / Bathurst St,3572,3484,88
+Bridgman Ave / Kendal Ave,5876,5644,232
+Brimley Rd / Lawrence Ave E,419,421,-2
+Brimley Rd / McCowan District Park,258,256,2
+Broadview Ave / Westwood Ave,4036,3830,206
+Broadview Subway Station,10386,10448,-62
+Brookdale Ave / Yonge St,1,2,-1
+Brooklawn Ave / Kingston Rd,392,435,-43
+Caledonia Rd / Lotherton Pathway,217,310,-93
+Cariboo Ave / Railpath Trail,2029,1816,213
+Carlaw Ave / Danforth Ave,6876,6810,66
+Carlaw Ave / Dundas St E,13247,14037,-790
+Carlaw Ave / Strathcona Ave,4659,4598,61
+Carlton St / Parliament St,20140,20714,-574
+Castle Frank Subway Station,4034,3834,200
+Cedar Dr / Eglinton Ave E,90,88,2
+Centennial College (Ashtonbee Campus),228,262,-34
+Central Tech  (Harbord St),13793,14956,-1163
+Charles St / Church St - SMART,2771,2707,64
+Charles St E / Jarvis St - SMART,11721,9278,2443
+Charles St W / Balmuto St - SMART,26846,24556,2290
+Chatham Ave / Byron Ave,1732,1524,208
+Cherry Beach,7637,8709,-1072
+Cherry Beach Sports Fields (55 Unwin Ave),3110,3586,-476
+Cherry St / Distillery Ln,11727,11998,-271
+Cherry St / Lake Shore Blvd E,11045,11020,25
+Chiltern Hill Rd / Eglinton Ave W,899,925,-26
+Chorley Park - SMART,2440,2508,-68
+Christie St / Benson Ave (Wychwood Barns),4779,3458,1321
+Christie St / Dupont St,6881,6114,767
+Church St  / Wood St,27143,24364,2779
+Church St / Alexander St,26220,19051,7169
+Church St / Bloor St E,17569,17547,22
+Church St / Dundas St E - SMART,12303,11728,575
+Church St / Lombard St,14966,15618,-652
+Church St / Shuter St,7477,8168,-691
+Church St / The Esplanade,11011,12125,-1114
+Claremont St / Dundas St W,14451,14661,-210
+Clarence Square,17008,17928,-920
+Clendenan Ave / Rowland St - SMART,880,833,47
+Colgate Ave / Carlaw Ave,6493,7484,-991
+College Park - Gerrard Entrance,25125,25164,-39
+College Park - Yonge St Entrance,33204,32870,334
+College Park South,22410,22266,144
+College St / Borden St,17144,17242,-98
+College St / Crawford St,23609,24017,-408
+College St / Henry St,14793,14604,189
+College St / Huron St,34851,34879,-28
+College St / Major St,40197,40934,-737
+College St / Markham St,34331,34630,-299
+Colonel Danforth Park,917,909,8
+Concord Ave / Bloor St W,10664,10483,181
+Concord Ave / Dewson St,7866,7844,22
+Coronation Park (Martin Goodman Trail),18620,19132,-512
+Cosburn Ave / Cedarvale Ave,1263,1314,-51
+Cosburn Ave / Donlands Ave,2549,2471,78
+Cosburn Ave / Durant Ave,1093,973,120
+Coxwell Ave / Plains Rd,1475,1397,78
+Crawford St / Lobb Ave,3062,3911,-849
+Crawford St / Queen St W,8696,9532,-836
+Cruickshank Park,368,385,-17
+Cumberland St / Bay St -  SMART,12508,12027,481
+D'Arcy St / McCaul St - SMART,12284,12205,79
+Dalton Rd / Bloor St W,14887,14959,-72
+Danforth Ave / Aldridge Ave,2301,2226,75
+Danforth Ave / Barrington Ave,3958,3787,171
+Danforth Ave / Coxwell Ave,5130,5018,112
+Danforth Ave / Danforth Rd,684,645,39
+Danforth Ave / Dewhurst Blvd,3126,2700,426
+Danforth Ave / Ellerbeck St,6354,6344,10
+Danforth Ave / Gough Ave,8740,8000,740
+Danforth Ave / Lamb Ave,5927,5817,110
+Danforth Ave / Warden Ave,366,385,-19
+Danforth Ave / Westlake Ave,2957,2717,240
+Danforth Rd / Birchmount Rd,459,475,-16
+Davenport Rd / Avenue Rd,8651,9201,-550
+Davenport Rd / Bathurst St,2101,1647,454
+Davenport Rd / Bedford Rd,10918,10179,739
+Davenport Rd / Christie St,4817,3818,999
+Davenport Rd / Dovercourt Rd - SMART,2335,2139,196
+Davenport Rd / Lansdowne Ave,2993,2831,162
+Davenport Rd / McAlpine St - SMART,4143,3690,453
+Davisville Ave / Pailton Cres,2461,1563,898
+Dawes Rd / Taylor Creek Trl,1281,1325,-44
+Dentonia Park,1403,1407,-4
+Don Mills Rd / Fairview Mall Dr,113,114,-1
+Don Mills Rd / Goodview Rd,89,103,-14
+Donlands Subway Station,3308,2860,448
+Downsview Park Blvd / Keele St  - SMART,1932,1969,-37
+Downsview Park Subway Station - SMART,828,770,58
+Driftwood Ave / Finch Corridor Trail,182,172,10
+Dufferin Gate - SMART,4600,4677,-77
+Dufferin St / Bloor St W,3189,2765,424
+Dufferin St / Finch Corridor Trail,283,291,-8
+Dufferin St / Queen St W,6093,6311,-218
+Dufferin St / Sylvan Av (Dufferin Grove Park),11654,11870,-216
+Duncan Mill Rd / Valleybrook Dr,44,50,-6
+Duncan St / Adelaide St W - SMART,12212,12216,-4
+Dundas St E / Boulton Ave - SMART,6521,6760,-239
+Dundas St E / Broadview Ave,10450,10792,-342
+Dundas St E / George St,10640,9753,887
+Dundas St E / Parliament St,19844,20001,-157
+Dundas St E / Pembroke St,6254,6085,169
+Dundas St E / Regent Park Blvd,31047,31710,-663
+Dundas St E / River St,19762,20473,-711
+Dundas St W / Crawford St,30691,32470,-1779
+Dundas St W / Edna Ave,6220,6354,-134
+Dundas St W / Prince Edward Dr N,817,926,-109
+Dundas St W / St Helen's Ave - SMART,3680,3277,403
+Dundas St W / St. Patrick St,21750,21757,-7
+Dundas St W / Yonge St,32718,34404,-1686
+Dundonald St / Church St,17205,7462,9743
+Dunn Ave / Queen St W,1259,1437,-178
+Durie St / Dundas St W,1834,1766,68
+E.T Seton Park - South,1382,1376,6
+E.T. Seton Park (Eglinton Ave E / Leslie St),1238,1259,-21
+East Liberty St / Western Battery Rd,21242,21387,-145
+East Lynn Ave / Danforth Ave,3439,3468,-29
+Eastern Ave / Winnifred Ave,1411,1724,-313
+Eastgate Cres / Pharmacy Ave,171,161,10
+Eastwood Rd / Coxwell Ave,5955,6179,-224
+Eastwood Rd / Woodbine Ave - SMART,1869,1965,-96
+Edward St / Yonge St,19126,19033,93
+Eglinton Ave E / Brentcliffe Rd,1567,1653,-86
+Eglinton Ave E / Brimley Rd,168,159,9
+Eglinton Ave E / Mason Rd,57,53,4
+Eglinton Ave E / Redpath Ave,5858,4222,1636
+Eglinton Ave E / Victoria Park Ave,16,19,-3
+Eglinton Ave W / Ennerdale Rd,707,749,-42
+Eglinton Ave W / Gilbert Ave,423,309,114
+Eglinton Ave W / Henning Ave SMART,1278,1172,106
+Eglinton Ave W / Oakwood Ave,28,17,11
+Eglinton Ave W / Prospect Cemetery,338,269,69
+Eglinton Ave W / Scarlett Rd,1033,1074,-41
+Eglinton Ave W / Venn Cres,499,501,-2
+Eglinton West Subway Station,39,21,18
+Elizabeth St / Edward St (Bus Terminal),15570,16826,-1256
+Elizabeth St / Elm St,18103,18727,-624
+Ellesmere Rd / Markham Rd,211,207,4
+Ellis Ave / The Queensway,2027,2263,-236
+Elm St/ University Ave (East Side),11631,12959,-1328
+Elwood Blvd / Avenue Rd,875,798,77
+Emdaabiimok Ave / Lake Shore Blvd E,3534,3797,-263
+Emerson Ave / Bloor St W,6632,6468,164
+Emmett Ave,187,192,-5
+Empress Ave / Yonge St,304,294,10
+Erskine Ave / Redpath Ave,2264,1729,535
+Erskine Ave / Yonge St SMART,1839,1720,119
+Essex St / Christie St,7093,6429,664
+Esther Shiner Stadium,530,540,-10
+Euclid Ave / Bloor St W,10619,9662,957
+Euclid Ave / Herrick St - SMART,5792,5625,167
+Exhibition GO (Atlantic Ave),9798,9926,-128
+Exhibition GO Station,4951,5019,-68
+Fairglen Cres / Weston Rd,21,20,1
+Fairmount Park,1652,1783,-131
+Felstead Ave/Gillard Ave (Monarch Park),4713,4731,-18
+Fenwood Ht / Kingston Rd,177,185,-8
+Ferrand Dr / Rochefort Dr,1018,1053,-35
+Finch Ave W / Wilmington Ave,63,54,9
+Finch Subway Station,1358,1396,-38
+Finch West Subway Station,951,917,34
+Firvalley Ct / Warden Ave,219,251,-32
+Fleet St / Bathurst St,14880,15468,-588
+Fleming Cres / Bayview Ave,2011,2118,-107
+Florence Gell Park,626,771,-145
+Fort York  Blvd / Capreol Ct,32506,31339,1167
+Fort York Blvd / Bathurst St - SMART,13778,13069,709
+Fort York Blvd / Garrison Rd,13088,13411,-323
+Fort York Blvd / Grand Magazine St,9601,9538,63
+Frederick St / King St E,29714,32213,-2499
+Frederick St / The Esplanade,4683,5428,-745
+Frobisher Ave / Lascelles Blvd,2661,2620,41
+Front St E / Bayview Avenue,12928,13096,-168
+Front St E / Cherry St,17680,17857,-177
+Front St E / Scott St,15103,15384,-281
+Front St W / Bay St (North Side),10825,10883,-58
+Front St W / Bay St (South Side),15642,16513,-871
+Front St W / Blue Jays Way,22167,22446,-279
+Front St W / Simcoe St,10513,10814,-301
+Front St W / Spadina Ave,10376,10674,-298
+Front St W / University Ave (1),11578,13282,-1704
+Front St W / University Ave (2),21037,21684,-647
+Front St W / Yonge St (Hockey Hall of Fame),12752,17061,-4309
+Fulton Ave / Pape Ave,2751,2469,282
+G Ross Lord Park,494,480,14
+Galbraith Rd / King's College Rd,12282,12029,253
+Gamble Ave / Broadview Ave,3767,3524,243
+Garden Ave / Roncesvalles Ave,6633,6876,-243
+George St / King St E,13235,13806,-571
+Gerrard Square Mall (1010 Gerrard St E),10614,11340,-726
+Gerrard St E / Broadview Ave  - SMART,13045,13431,-386
+Gerrard St E / Leslie St,5465,5752,-287
+Gerrard St E / Main St,2294,1923,371
+Gerrard St E / Malvern Ave - SMART,1053,841,212
+Gerrard St E / Nasmith Ave,4789,4639,150
+Gerrard St E / River St,5288,5454,-166
+Gerrard St E / Victoria Park Ave - SMART,1588,1590,-2
+Gladstone Ave / Queen St W,8074,8220,-146
+Glebe Rd W / Yonge St,2217,2129,88
+Glen Edyth Dr / Davenport Rd,3957,3931,26
+Glen Long Community Centre,353,393,-40
+Glencairn Subway Station,667,658,9
+Glendonwynne Rd / Bloor St W,5526,5511,15
+Goodwood Park Crt / Dentonia Park,570,468,102
+Gordonridge Pl / Danforth Rd,115,126,-11
+Gothic Ave / Quebec Ave,3384,3014,370
+Gould St / Mutual St,24621,23920,701
+Gould St / Yonge St (TMU),18754,19254,-500
+Granby St / Church St - SMART,22519,20633,1886
+Grand Avenue Park,3372,3475,-103
+Grantbrook St / Finch Hydro Corridor Trail,1,1,0
+Greenwood Ave / Gerrard St E,4508,4886,-378
+Greenwood Ave / Sammon Ave,1704,1746,-42
+Grenoble Dr / Deauville Ln,269,256,13
+Grenoble Dr / Gateway Blvd,1049,1091,-42
+Grenoble Dr / Vendome Pl,465,469,-4
+Guildwood GO Station (South),329,340,-11
+Gunns Rd / Lavender Creek Trail,392,369,23
+HTO Park (Queens Quay W),21272,24099,-2827
+HTO Park West,11000,11827,-827
+Hanna Ave / Liberty St,11695,13362,-1667
+Hanna Ave / Snooker St,8276,8112,164
+Harbord St / Clinton St,9184,9268,-84
+Harbord St / Grace St (Bickford Park),4202,4081,121
+Harvie Ave / Rogers Rd,631,567,64
+Havelock St / Dewson St,5179,5309,-130
+Havelock St / Dufferin Park,4414,4297,117
+Hawksbury Dr / Sheppard Ave E,184,190,-6
+Hayter St / La Plante Ave,13205,12847,358
+Heyworth Cres / Kingston Rd,1797,1953,-156
+High Park - Grenadier Cafe,3934,3982,-48
+High Park - West Rd,3798,3757,41
+High Park Amphitheatre,3419,3402,17
+High Park Ave / Dundas St W,4217,4314,-97
+High Park Blvd / Parkside Dr,5475,5615,-140
+High Park Outdoor Pool,1945,1793,152
+High Park Subway Station,3446,3426,20
+Highfield Rd / Gerrard St E,4901,5308,-407
+Highview Ave / Kennedy Rd,305,296,9
+Hillsdale Ave E / Mount Pleasant Rd,1025,999,26
+Hillsdale Ave W / Yonge St,2883,1941,942
+Hocken Ave / Vaughan Rd,2770,2165,605
+Housey St / Dan Leckie Way,20256,20975,-719
+Howard Park Ave / Dundas St W - SMART,4304,4395,-91
+Howard Park Ave / Parkside Dr,1561,1599,-38
+Howard St / Rose Ave,5525,4350,1175
+Howard St / Sherbourne St,12858,10571,2287
+Hubbard Blvd / Balsam Av,2694,3120,-426
+Hubbard Blvd / Glen Manor Dr,2700,3005,-305
+Humber Bay Shores Park / Marine Parade Dr,18492,20128,-1636
+Humber Bay Shores Park East,10256,10481,-225
+Humber Bay Shores Park West,10248,11187,-939
+Humber College (Lakeshore Campus),1663,1694,-31
+Humber River Hospital,330,343,-13
+Humberside Grounds - SMART,1072,1069,3
+Huron St / Harbord St,17612,16662,950
+Isabella St / Church St,19979,13850,6129
+Islington Ave / Finch Ave W,227,235,-8
+Islington Subway Station (Aberfoyle Cres),1506,1576,-70
+Jameson Ave / Queen St W,5414,5690,-276
+Jane St / Bloor St W (Jane Subway Station),2039,2012,27
+Jane St / Finch Ave W,145,151,-6
+Jane St / Haney Ave,674,690,-16
+Jane St / Lawrence Ave W,123,87,36
+Jane St / Queens Dr,126,122,4
+Jane St / Weston Rd,291,288,3
+Jane St / Yewtree Blvd,167,181,-14
+Jane St / Yorkwoods Gt,89,83,6
+Jarvis St / Carlton St,16456,16506,-50
+Jarvis St / Dundas St E,24289,23557,732
+Jarvis St / Isabella St,10974,8478,2496
+Jarvis St / Maitland Pl,12703,12602,101
+Jarvis St / Richmond St E,16266,16245,21
+Jimmie Simpson Park (Queen St E),10862,11528,-666
+Joe Shuster Way / King St W,15565,15828,-263
+John St  / Mercer St - SMART,31108,31768,-660
+Joseph J Piccininni Community Centre,1444,1318,126
+Judson St / Royal York Rd,2286,2285,1
+Keele St / Annette St,3403,3402,1
+Keele St / Catford Rd,602,629,-27
+Keele St / Dovehouse Ave - SMART,467,478,-11
+Keele St / Ingram Dr,339,362,-23
+Keele St / Lloyd Ave,1111,1102,9
+Keele St / Vine Ave,2846,2774,72
+Kempford Blvd / Yonge St,392,384,8
+Kendal Ave / Bernard Ave,9634,9372,262
+Kendal Ave / Spadina Rd,4814,4524,290
+Kennedy Rd/Ranstone Gdns (Jack Goodlad Park),116,132,-16
+Kewbeach Ave / Kenilworth Ave,3771,4273,-502
+Kilgour Rd / Rumsey Rd,796,794,2
+King St E / Berkeley St,14724,15683,-959
+King St E / Church St,14207,14774,-567
+King St E / Jarvis St,14612,17365,-2753
+King St E / River St,18797,19017,-220
+King St E / Victoria St,19761,20096,-335
+King St W / Bay St (East Side),11494,11695,-201
+King St W / Bay St (West Side),28944,62060,-33116
+King St W / Brant St,13429,14152,-723
+King St W / Charlotte St,31776,31869,-93
+King St W / Cowan Ave - SMART,5619,5748,-129
+King St W / Crawford St,8495,8235,260
+King St W / Douro St,12034,12190,-156
+King St W / Fraser Ave,2796,3038,-242
+King St W / Jameson Ave - SMART,7702,7901,-199
+King St W / Joe Shuster Way,14307,14589,-282
+King St W / Jordan St,12426,12537,-111
+King St W / Portland St - SMART,38061,38623,-562
+King St W / Spadina Ave,10426,10670,-244
+King St W / Stafford St,10839,10894,-55
+King St W / Tecumseth St,25585,25841,-256
+King St W / University Ave,7793,7588,205
+King St W / Wilson Park Blvd,2822,2903,-81
+King St W / York St,8604,8854,-250
+King St W / York St (2),7108,7151,-43
+King's Mill Park,1858,1954,-96
+Kingston Rd / Beech Ave,2528,2603,-75
+Kingston Rd / Glen Everest Rd,604,629,-25
+Kingston Rd / Markham Rd,23,22,1
+Kingston Rd / Ridgemoor Ave,443,490,-47
+Kingston Rd / Scarborough Golf Club Rd,170,174,-4
+Kingston Rd / Warden Ave,783,817,-34
+Lake Shore Blvd E / Knox Ave,1298,1482,-184
+Lake Shore Blvd E / Leslie St,6789,7098,-309
+Lake Shore Blvd W / Bathurst St,1030,1791,-761
+Lake Shore Blvd W / Brow Dr,906,944,-38
+Lake Shore Blvd W / Colborne Lodge Dr,8916,9490,-574
+Lake Shore Blvd W / Ellis Ave,8335,8752,-417
+Lake Shore Blvd W / Legion Rd,3326,3485,-159
+Lake Shore Blvd W / Long Branch Ave,798,850,-52
+Lake Shore Blvd W / Ontario Dr,11343,10914,429
+Lake Shore Blvd W / Seventeenth St,826,866,-40
+Lake Shore Blvd W / The Boulevard Club,9268,9565,-297
+Lake Shore Blvd W / Thirty Ninth Street,573,618,-45
+Lake Shore Blvd W / Twenty Fourth St,1150,1245,-95
+Lake Shore Blvd W / Windermere Ave,6154,6836,-682
+Langford Ave / Danforth Ave - SMART,5449,4471,978
+Lansdowne Ave / Seaforth Ave,3283,3376,-93
+Lansdowne Ave / Whytock Ave,3253,3270,-17
+Lansdowne Subway Station,4975,4676,299
+Lascelles Blvd / Eglinton Ave W,4122,2687,1435
+Lawrence Ave E / Don Mills Trail,477,493,-16
+Lawrence Ave W / Marlee Ave,25,18,7
+Lawton Blvd / Yonge St,5188,3160,2028
+Leslie St / Commissioners St,6648,7369,-721
+Leslie Subway Station,135,160,-25
+Liberty St / Fraser Ave Green P,10960,11320,-360
+Lillian St / Soudan Ave - SMART,907,858,49
+Lindylou Rd / Lanyard Rd,97,92,5
+Ling Rd / Morningside Ave,289,294,-5
+Lisgar Park,23053,23224,-171
+Lisgar St / Dundas St W - SMART,10717,10963,-246
+Lisgar St / Queen St W - SMART,11118,11695,-577
+Little Norway Park,12970,13608,-638
+Livingston Rd (Highland Creek Trail),329,331,-2
+Livingston Rd / Guildwood Pkwy,416,445,-29
+Logan Ave / Bain Ave,5167,5289,-122
+Logan Ave / Gerrard St E,10024,10528,-504
+Lonsdale Rd / Spadina Rd,1732,1741,-9
+Lower Don River Trail and Taylor Creek Trail,1944,1941,3
+Lower Jarvis St / Queens Quay E,28155,28753,-598
+Lower Jarvis St / The Esplanade,12366,13017,-651
+Lower Sherbourne St / The Esplanade,15734,16617,-883
+Lower Simcoe St / Bremner Blvd,24858,25099,-241
+Lower Spadina Ave / Lake Shore Blvd W,13862,14469,-607
+Lumsden Ave / Cedarvale Ave,1965,1939,26
+Lumsden Ave / Eastdale Ave,1117,1121,-4
+Lundy Ave / _tienne Br_l_ Park,1410,1496,-86
+Luttrell Ave / Danforth Ave,1268,1253,15
+Lynn Williams St / East Liberty St,21294,21415,-121
+Lynn Williams St / Pirandello St,13200,13147,53
+Mabelle Park,669,697,-28
+Macpherson Ave / Spadina Rd,7363,7174,189
+Madison Ave / Bloor St W,9450,8214,1236
+Mallaby Park,382,381,1
+Mallon Ave / Jones Ave -SMART,4952,5319,-367
+Marie Curtis Park,2145,2226,-81
+Marilyn Bell Park Tennis Court,18042,18168,-126
+Markham Rd / The Meadoway,188,190,-2
+Marlee Ave / York Beltline Trail,1196,1286,-90
+Martin Goodman Trail (Marilyn Bell Park),8814,8641,173
+Mary McCormick Rec Centre (Sheridan Ave),5134,5324,-190
+Maud St / Adelaide St W - SMART,20366,20846,-480
+McCowan Rd / Trudelle St,177,186,-9
+McGill St / Church St,19997,19907,90
+McRae Dr / Laird Dr - SMART,1325,1360,-35
+Merton St / Mount Pleasant Rd,2313,2318,-5
+Metro Hall Plaza,12215,12264,-49
+Midland Ave / Kingston Rd,392,380,12
+Mill St / Cherry St,10545,11127,-582
+Mill St / Parliament St,21624,21930,-306
+Mill St / Tannery Rd,6807,7933,-1126
+Millwood Rd / Southvale Dr,1261,1310,-49
+Moore Park,1261,1239,22
+Morningside Park (Highland Creek Trail),1175,1156,19
+Morse St / Eastern Ave,3749,4371,-622
+Mortimer Ave / Carlaw Ave SMART,2375,2321,54
+Mortimer Ave / Coxwell Ave,3470,3107,363
+Moss Park,11147,11364,-217
+Mount Pleasant Rd / Davisville Ave - SMART,3402,2541,861
+Mutual St / Shuter St,25321,25290,31
+Nassau St / Bellevue Ave,21433,21705,-272
+Navy Wharf Crt / Bremner Blvd,15601,15793,-192
+Neil McLellan Park,3389,3331,58
+Nelson St / Duncan St,26758,31175,-4417
+Niagara St / King St W - SMART,12871,13051,-180
+Niagara St / Portland St,13640,13984,-344
+Niagara St / Queen St W,5351,5454,-103
+Niagara St / Richmond St W,17291,21170,-3879
+Niagara St / Tecumseth St,9156,9240,-84
+Noble St / Queen St W,6183,6496,-313
+Northern Dancer Blvd / Lake Shore Blvd E,11030,14624,-3594
+O'Connor Dr / Curity Ave,617,661,-44
+OCAD University,8148,8102,46
+Oak St / Sackville St,8168,8125,43
+Oak St / Sumach St,9486,9280,206
+Oakdale Community Centre,99,109,-10
+Ontario Place Blvd / Lake Shore Blvd W,14309,15488,-1179
+Ontario St / Adelaide St E -SMART,19719,19920,-201
+Opposite 1103 Leslie St,414,414,0
+Orchard Park,2250,2646,-396
+Orde St / McCaul St,10458,10146,312
+Oriole Pkwy / Kilbarry Rd,1243,1154,89
+Ossington Ave / Bloor St W,8046,8017,29
+Ossington Ave / Bruce St,15586,15890,-304
+Ossington Ave / College St,14313,14547,-234
+Ossington Ave / Harrison St,9942,10343,-401
+Overlea Blvd / Thorncliffe Park Dr,751,801,-50
+Pacific Ave / Glenlake Ave,1934,1727,207
+Palmerston Ave / Dundas St W,21870,21886,-16
+Palmerston Ave / Vermont Ave,6842,6634,208
+Palmerston Blvd / Herrick St,2050,2017,33
+Palmerston Blvd / Lennox St,8276,8614,-338
+Pape Ave / Gamble Ave,3726,3758,-32
+Park Lawn Rd / Berry Rd,854,854,0
+Parkcrest Dr / Kingston Rd,180,205,-25
+Parkside Dr / Bloor St W - SMART,5753,5931,-178
+Parliament St / Aberdeen Ave,9483,9506,-23
+Pharmacy Ave / Danforth Ave,631,638,-7
+Pharmacy Ave / Teesdale Pl,513,544,-31
+Phoebe St / Spadina Ave,11971,16163,-4192
+Pioneer Village Subway Station,284,255,29
+Plaxton Dr / St. Clair Ave E,509,534,-25
+Polson Pier,12658,15921,-3263
+Portland St / Queen St W,24200,25390,-1190
+Portland St / Wellington St W,9699,9920,-221
+Pottery Rd / Lower Don River Trail,3003,3118,-115
+Pretoria Ave / Broadview Ave,4079,3794,285
+Primrose Ave / Davenport Rd,1214,1149,65
+Princes' Blvd / Nunavut Rd,3574,3580,-6
+Princes' Gates,5881,5996,-115
+Princess St / Front St E,24228,24804,-576
+Priscilla Ave / Dundas St W,1030,1030,0
+Queen St E / Alton Av,6027,6422,-395
+Queen St E / Berkeley St,8450,8624,-174
+Queen St E / Hammersmith Ave,995,1239,-244
+Queen St E / Joseph Duggan Rd,3769,4257,-488
+Queen St E / Nursewood Rd,2282,2598,-316
+Queen St E / Pape Ave - SMART,5328,5995,-667
+Queen St E / Rhodes Ave,3974,4228,-254
+Queen St E / Rushbrooke Ave,5215,5709,-494
+Queen St E / Sackville St,4853,4841,12
+Queen St E / Woodward Ave,4259,4686,-427
+Queen St W  /  Fuller Ave - SMART,5339,5555,-216
+Queen St W / Close Ave,280,312,-32
+Queen St W / Cowan Ave,7737,8024,-287
+Queen St W / Dovercourt Rd,12517,13122,-605
+Queen St W / John St,36949,38740,-1791
+Queen St W / Ossington Ave,14496,16276,-1780
+Queen St W / Shaw St,12792,13252,-460
+Queen St W / Spadina Ave,12233,12141,92
+Queen St. E / Eastern Ave,3069,3208,-139
+Queen St. E / Spruce Hill Rd.,1774,2087,-313
+Queen's Park / Bloor St W,22046,22450,-404
+Queen's Park Cres E / Grosvenor St - SMART,9884,9658,226
+Queen's Park Cres W / Hoskin Ave,17406,16932,474
+Queens Park Cres / College St,14281,12989,1292
+Queens Quay / Yonge St,34582,36873,-2291
+Queens Quay E / Lower Jarvis St,23131,24360,-1229
+Queens Quay E / Lower Sherbourne St,23493,24156,-663
+Queens Quay E / Merchants' Wharf,7730,7678,52
+Queens Quay W / Dan Leckie Way,13573,14287,-714
+Queens Quay W / Lower Simcoe St,24330,26281,-1951
+Ramsden Park,4548,4087,461
+Randolph Ave / Perth Ave,3659,3378,281
+Regal Rd / Dufferin St,1396,1341,55
+Richmond St E / Jarvis St Green P,8749,6067,2682
+Richmond St E / Yonge St,33603,33853,-250
+Richmond St W / Bathurst St,12023,12266,-243
+Richmond St W / York St,14062,14094,-32
+Ripley Ave / Ormskirk Ave,1616,1999,-383
+Riverdale Park North (Broadview Ave),9626,9919,-293
+Riverdale Park South (Broadview Ave),5914,6030,-116
+Robert St / Bloor St W - SMART,25483,24347,1136
+Roehampton Ave / Bayview Ave,1235,1227,8
+Roehampton Ave / Mount Pleasant Rd,1862,1945,-83
+Rogers Rd / Bicknell Ave,647,632,15
+Rogers Rd / Prospect Cemetery,508,492,16
+Rogers Rd / Watt Ave,787,806,-19
+Roncesvalles Ave / Fermanagh Ave,7141,7339,-198
+Roncesvalles Ave / Marmaduke St,7106,7187,-81
+Rosedale Park (20 Scholfield Ave),1783,1794,-11
+Rosehill Ave / Avoca Ave - SMART,1633,1448,185
+Ross St / Cecil St - SMART,8081,7778,303
+Rouge Hill GO Station,1181,1205,-24
+Roxborough St W / Yonge St,704,669,35
+Roxton Rd / Harbord St,5553,5613,-60
+Royal York Rd / Lake Shore Blvd W,1580,1687,-107
+Royal York Rd / Mimico Ave,1204,1230,-26
+Runnymede Rd / Annette St,2754,2732,22
+Rusholme Park Cres / College St,11313,11544,-231
+Rushton Rd / St. Clair Ave W,2204,2191,13
+Russell Hill Rd / St. Clair Ave W,2717,1908,809
+Sackville St / Eastern Ave - SMART,5527,5779,-252
+Salem Ave / Bloor St W,8839,8910,-71
+Scarborough GO Station,35,22,13
+Scarborough Soccer Centre,362,357,5
+Scarlett Rd / Clairton Cres,55,83,-28
+Scarlett Rd / Eileen Ave,358,390,-32
+Scarlett Rd / Old Scarlett Rd,361,376,-15
+Scott St / The Esplanade,16765,17294,-529
+Seaton St / Dundas St E - SMART,9421,8667,754
+Second St / Lake Shore Blvd W,1512,1632,-120
+Sentinel Rd / Finch Ave W,447,429,18
+Sentinel Rd / Finch Corridor Trail,1495,1517,-22
+Sentinel Rd / Sheppard Ave W,216,214,2
+Sharpe St / Park St (Sandown Park),220,213,7
+Shaughnessy Blvd / Sheppard Ave E,117,115,2
+Shaw St / Essex St - SMART,9596,9869,-273
+Shaw St / King St W,15630,16070,-440
+Sheppard Ave E / Leslie St,164,159,5
+Sheppard Ave W / Chesswood Dr,344,314,30
+Sherbourne St / Carlton St (Allan Gardens),17933,18081,-148
+Sherbourne St / Isabella St,20966,19515,1451
+Sherbourne St / Wellesley St E,23455,16277,7178
+Sherbourne St N / Elm Ave,4876,4672,204
+Shuter St/River St,13404,13569,-165
+Simcoe St / Dundas St W,16168,13626,2542
+Simcoe St / Elm St,7880,7957,-77
+Simcoe St / King St W,18108,18218,-110
+Simcoe St / Michael Sweet Ave,7637,7623,14
+Simcoe St / Pullan Pl,6092,6196,-104
+Simcoe St / Queen St W,28322,29713,-1391
+Simcoe St / Wellington St W (North),7526,7644,-118
+Simcoe St / Wellington St W South,13564,13634,-70
+Sixth St / Lake Shore Blvd W,917,996,-79
+Slan Ave / Scarborough Golf Club Rd,203,203,0
+Soho St / Queen St W,27950,29777,-1827
+Sorauren Ave / Geoffrey St - SMART,4913,4899,14
+Soudan Ave / Yonge St,6260,4996,1264
+Southwood Dr / Kingston Rd - SMART,2337,2384,-47
+Spadina Ave / Adelaide St W,31207,31524,-317
+Spadina Ave / Blue Jays Way,13940,11743,2197
+Spadina Ave / Bulwer St- SMART,12086,12361,-275
+Spadina Ave / Fort York Blvd,18896,19244,-348
+Spadina Ave / Harbord St - SMART,32506,28174,4332
+Spadina Ave / Sullivan St,21149,21572,-423
+Spadina Ave / Sussex Ave,15222,9567,5655
+Spadina Ave / Willcocks St,12792,12789,3
+Spadina Rd / Austin Terrace,2988,2238,750
+Spadina Rd / St. Clair Ave W,1940,1473,467
+St Clair Ave W / Oakwood Ave,1616,1545,71
+St Clarens Ave / College St,4178,4282,-104
+St Clarens Ave / Shirley St,2503,2561,-58
+St. Andrew's Playground Park,14295,14377,-82
+St. Clair Ave W / Avenue Rd,4735,3697,1038
+St. Clair Ave W / Bathurst St,4500,3363,1137
+St. Clair Ave W / Caledonia Rd,690,658,32
+St. Clair Ave W / Castleton Ave,2134,2122,12
+St. Clair Ave W / Gunns Rd,1939,1604,335
+St. Clair Ave W / Osler St,3590,3559,31
+St. Clair Ave W / Robina Ave,2015,1867,148
+St. Clair Ave W / Symes Rd,689,717,-28
+St. Clair Ave W / Winona Dr,3478,3202,276
+St. Clair West Subway Station - Heath St. W,1423,1282,141
+St. Columba Pl / St. Clair Ave E,852,944,-92
+St. George St / Bloor St W,33948,33647,301
+St. George St / Hoskin Ave,20921,20336,585
+St. George St / Willcocks St,15495,14486,1009
+St. John's Rd / Dundas St W,1595,1613,-18
+St. Joseph St / Bay St - SMART,19891,16812,3079
+Starspray Blvd / Lawrence Ave E,931,963,-32
+Sterling Rd / Dundas St W,1616,1283,333
+Strachan Ave / East Liberty St - SMART,27262,27390,-128
+Strachan Ave / Princes' Blvd,7349,8694,-1345
+Sumach St  / Queen St E,11270,11264,6
+Sumach St / Carlton St (Riverdale Farm),8975,9005,-30
+Summerhill Ave / Maclennan Ave,1941,1996,-55
+Summerhill Subway Station,5938,6006,-68
+Sunnybrook Health Centre - L Wing,976,716,260
+Sunnybrook Health Centre - S Wing,1850,1610,240
+Sunnybrook Park,1141,1142,-1
+Sunnyside - Gus Ryder Pool,10133,10751,-618
+Sunnyside Ave / The Queensway - SMART,5964,6201,-237
+Superior Ave / Lake Shore Blvd W,1976,2086,-110
+Sussex Ave / St George St,10255,9686,569
+Swansea Community Centre,1854,1811,43
+Symes Rd / Glen Scarlett Rd - SMART,277,275,2
+Symington Ave / Davenport Rd,2115,2066,49
+Symington Ave / Dupont St,5403,5400,3
+Taddle Creek Park,11820,10842,978
+Talbot Rd / Finch Hydro Corridor,258,248,10
+Tangiers Rd / Finch Ave W,126,110,16
+Tecumseth St / Queen St W - SMART,22066,22795,-729
+Tecumseth St / Tecumseth Pl,82,84,-2
+Ted Rogers Way / Bloor St E,15349,9609,5740
+Teddington Park Ave,543,571,-28
+Temperance St / Bay St,17827,18046,-219
+Temperance St Station,26948,33021,-6073
+The Esplanade / Hahn Pl,1177,1252,-75
+The Kingsway / Ashley Rd,521,590,-69
+The Pond Rd / Ian Macdonald Blvd,939,896,43
+The Pond Rd / Sentinel Rd,1177,1139,38
+The Pond Rd / Shoreham Dr,345,321,24
+The Queensway / High St,1456,1498,-42
+The Queensway at South Kingsway,1574,1741,-167
+The Well,24409,24681,-272
+Thompson St / Broadview Ave - SMART,9397,11182,-1785
+Thompson St / Carroll St,5212,5645,-433
+Thorncliffe Park Dr / Leaside Park Trail,1481,1533,-52
+Tiago Ave / Westview Blvd,389,457,-68
+Tobermory Dr / Finch Corridor Trail,173,164,9
+Tommy Thompson Park (Leslie Street Spit),18562,19049,-487
+Toronto Eaton Centre (Yonge St) - SMART,22642,22514,128
+Toronto Inukshuk Park,16155,16267,-112
+Torresdale Ave / Antibes Dr,642,651,-9
+Trent Ave / Danforth Ave,1516,1389,127
+Trethewey Dr / Black Creek Dr,132,138,-6
+Trethewey Dr / Jane St,131,116,15
+Trinity St /Front St E,7370,7942,-572
+Twelfth St / Thirteenth St,792,908,-116
+Tyndall Ave / King St W - SMART,8591,8811,-220
+Ulster St / Bathurst St,9502,9434,68
+Union Station,44669,56261,-11592
+Union Station (North),324,354,-30
+University Ave / College St (East),16146,15578,568
+University Ave / Gerrard St W (East Side),29135,37224,-8089
+University Ave / Gerrard St W - SMART(South),4624,4472,152
+University Ave / King St W - SMART,11759,11361,398
+University Ave / Pearl St,7388,7576,-188
+University Ave / Queen St W,11572,11267,305
+University Ave / Richmond St W,7689,7694,-5
+University of Toronto Scarborough,376,355,21
+Uno Dr / The Queensway,1370,1454,-84
+Ursula Franklin St / Huron St - SMART,10184,8844,1340
+Ursula Franklin St / St. George St - SMART,18336,16771,1565
+Vanauley St / Queen St W - SMART,13648,14068,-420
+Vaughan Rd / Oakwood Ave,1079,926,153
+Vaughan Rd /Wychwood Ave,1729,1527,202
+Victoria Park Ave / Danforth Ave,2359,2288,71
+Victoria Park Ave / Dawes Rd,832,764,68
+Victoria Park Ave / Edge Park Ave,350,369,-19
+Victoria Park Ave / Kingston Rd,1575,1604,-29
+Victoria Park Subway Station - SMART,1526,1470,56
+Viewmount Park,304,297,7
+Wakunda Pl / O'Connor Dr,272,284,-12
+Wallace Ave / Pauline Ave,3661,3648,13
+Wallace Ave / Symington Ave - SMART,3498,3504,-6
+Walnut Ave / Queen St W,16021,16273,-252
+Walter Saunders Park,801,818,-17
+Walton St / Elizabeth St - SMART,3359,3492,-133
+Ward St / Wallace Ave,7403,7616,-213
+Warden Subway Station,649,671,-22
+Warehouse EBS-Station,5,9,-4
+Waterfront Trail (Rouge Hill),3001,3035,-34
+Wellesley St E / Jarvis St,6431,5672,759
+Wellesley St E / Parliament St,12649,12850,-201
+Wellesley St W / Queen's Park Cres,11896,11603,293
+Wellesley Station Green P,29738,24742,4996
+Wellington St W / Bay St,18662,23957,-5295
+Wellington St W / Stafford St,16719,16925,-206
+Wells Hill Ave / St. Clair Ave W,2475,2065,410
+Wells St / Brunswick Ave,1311,1148,163
+Wendover Rd / Bloor St W (Green P),677,688,-11
+Western Battery Rd / Pirandello St,8671,8730,-59
+Westmoreland Ave / Fernbank Ave,6915,6860,55
+Weston Lions Park,665,691,-26
+Weston Rd / Lanyard Rd,254,245,9
+Weston Rd / Sheppard Ave W,241,243,-2
+Weston Rd / St. Clair Ave W,1416,1337,79
+Widmer St / Adelaide St W - SMART,34202,34007,195
+Widmer St / King St W,21649,22702,-1053
+Wilket Creek Park,1639,1651,-12
+Willcocks St / St. George St,8461,6998,1463
+Willingdon Blvd / Bloor St W (Green P),1526,1606,-80
+Willowdale Ave / Bishop Ave,290,302,-12
+Windsor St / Newcastle St,3503,3218,285
+Winona Dr / Davenport Rd,3869,4066,-197
+Wolseley St / Augusta Ave,11463,12713,-1250
+Woodbine Ave / Lake Shore Blvd E,3837,4552,-715
+Woodbine Ave / O'Connor Dr,921,882,39
+Woodbine Subway Station,2815,2321,494
+Wright Ave / Sorauren Ave - SMART,5305,5485,-180
+Wychwood Ave / Benson Ave - SMART,2434,2050,384
+Wynford Heights Cres / Concorde Pl,465,497,-32
+Yarmouth Rd / Christie St,4911,4689,222
+Yonge St / Alexander St - SMART,24322,23704,618
+Yonge St / Aylmer Ave,7756,6144,1612
+Yonge St / Bloor St,26861,27275,-414
+Yonge St / Davisville Ave,3269,3101,168
+Yonge St / Dundas Sq,26205,26879,-674
+Yonge St / Dundonald St,16477,16143,334
+Yonge St / Golfdale Rd,539,544,-5
+Yonge St / Lake Shore Blvd E,0,1,-1
+Yonge St / Lawrence Ave E,1476,1505,-29
+Yonge St / Macpherson Ave,5442,4786,656
+Yonge St / Merton St,3716,1525,2191
+Yonge St / Montgomery Ave - SMART,1684,1634,50
+Yonge St / North York Blvd,297,284,13
+Yonge St / Orchard View Blvd,8989,5071,3918
+Yonge St / Sheppard Ave E,538,535,3
+Yonge St / St. Clair Ave,10631,8286,2345
+Yonge St / Woburn Ave - SMART,461,423,38
+Yonge St / Wood St,16391,15937,454
+Yonge St / Yorkville Ave,21717,21593,124
+York Mills Rd / Lesmill Rd,32,58,-26
+York Recreation Centre,449,525,-76
+York St / Harbour St (Love Park),11787,11965,-178
+York St / Lake Shore Blvd W,21541,21854,-313
+York St / Queen St W (City Hall),15267,15402,-135
+York St / Queens Quay W,49586,55263,-5677
+York St / Wellington St W (1),7235,7783,-548
+York St / Wellington St W (2),4361,4759,-398
+York University (Glendon Campus) - SMART,739,796,-57
+York University Station (North),481,425,56
+York University Station (South) - SMART,403,368,35

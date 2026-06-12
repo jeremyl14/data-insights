@@ -1,0 +1,3 @@
+# Raw data tracked by DVC — see SOURCE.md for snapshot details
+*.csv
+!SOURCE.md

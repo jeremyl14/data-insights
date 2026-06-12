@@ -1,0 +1,3 @@
+# Large files tracked by DVC — see SOURCE.md for snapshot details
+cycling-permanent-counts-15min-*.csv
+!SOURCE.md
