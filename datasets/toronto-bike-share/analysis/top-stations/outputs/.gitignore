@@ -1,0 +1,3 @@
+# Generated outputs from analyze.py
+*.png
+!top-stations-yearly.csv

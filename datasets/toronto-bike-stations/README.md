@@ -6,11 +6,18 @@ This is a **DVC + B2** snapshot demo dataset. The data is small
 enough to commit (~500 bytes) but the snapshot flow is identical
 to the larger Bike Share Ridership dataset (`toronto-bike-share`).
 
+The raw data is committed to git (along with the `.dvc` pointer
+file). B2 holds an identical copy under
+`s3://data-insights-raw/snapshots/files/md5/...`. New clones can
+restore it with `dvc pull` if the local copy is missing or
+corrupted.
+
 ## Files
 
 - `raw/stations.csv` — 10-row CSV of station reference data
 - `raw/stations.csv.dvc` — DVC pointer (md5 + size)
 - `raw/SOURCE.md` — provenance and re-fetch procedure
+- `raw/.gitignore` — see notes
 
 ## Storage strategy
 
@@ -23,11 +30,13 @@ to the larger Bike Share Ridership dataset (`toronto-bike-share`).
 ## Re-fetch
 
 ```bash
-# See raw/SOURCE.md for the re-fetch URL after first snapshot.
+curl -L -o raw/stations.csv \
+  "https://example.com/bike-share-stations.csv"
 dvc add raw/stations.csv
 dvc push
 ```
 
 ## Provenance
 
-Source: Open Data Toronto (ODC-BY). For details see `raw/SOURCE.md`.
+Snapshot taken 2026-06-09. Source: Open Data Toronto (ODC-BY).
+For details see `raw/SOURCE.md`.

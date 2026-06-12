@@ -1,0 +1,4 @@
+# Generated outputs from analyze.py
+*.png
+!weather-ridership-2025.csv
+!precip-events-2025.csv

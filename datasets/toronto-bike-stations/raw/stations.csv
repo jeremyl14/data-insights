@@ -1,0 +1,11 @@
+station_id,name,lat,lon,capacity
+7001,Bloor St / Yonge St,43.6700,-79.3870,27
+7002,Queen St / Bay St,43.6510,-79.3810,19
+7003,King St / Spadina Ave,43.6460,-79.3930,23
+7004,College St / Spadina Ave,43.6550,-79.4070,15
+7005,Dundas St / Yonge St,43.6560,-79.3800,21
+7006,Front St / Yonge St,43.6460,-79.3780,19
+7007,Union Station,43.6450,-79.3800,45
+7008,Harbourfront Centre,43.6380,-79.3820,25
+7009,Christie Pits,43.6650,-79.4200,19
+7010,Trinity Bellwoods,43.6470,-79.4140,29

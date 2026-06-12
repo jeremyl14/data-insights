@@ -1,0 +1,3 @@
+period,total_delays,significant_delays,mean_delay_min,ci_lower,ci_upper,total_delay_min
+rush,16793,14509,23.91,22.91,24.93,346843
+off-peak,46236,39861,23.54,23.05,24.04,938355

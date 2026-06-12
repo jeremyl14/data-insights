@@ -1,0 +1,31 @@
+location_dir_id,location_name,direction,reason
+746,"Bloor St E, west of Castle Frank Rd",Eastbound,only 0 prior year(s)
+747,"Bloor St E, west of Castle Frank Rd",Westbound,only 0 prior year(s)
+12,"Bloor St W, east of Old Mill Trl",Eastbound,only 1 prior year(s)
+13,"Bloor St W, east of Old Mill Trl",Westbound,only 1 prior year(s)
+8,"Bloor St W, east of Palmerston Blvd",Eastbound,only 2 prior year(s)
+9,"Bloor St W, east of Palmerston Blvd",Westbound,only 2 prior year(s)
+5,"Bloor St W, west of Huron St",Eastbound,only 1 prior year(s)
+6,"Bloor St W, west of Huron St",Westbound,only 1 prior year(s)
+3,"Bloor St W, west of Oakmount Rd",Eastbound,only 2 prior year(s)
+4,"Bloor St W, west of Oakmount Rd",Westbound,only 2 prior year(s)
+603,"Millwood Rd, north of Pape Ave/Donlands Ave",Northbound,only 0 prior year(s); no 2025 data
+604,"Millwood Rd, north of Pape Ave/Donlands Ave",Southbound,only 0 prior year(s); no 2025 data
+38,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Northbound,no 2025 data
+39,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Southbound,no 2025 data
+16,"Sheppard Ave W, west of Sentinel Rd (multi-use path)",Eastbound,only 2 prior year(s)
+17,"Sheppard Ave W, west of Sentinel Rd (multi-use path)",Westbound,only 2 prior year(s)
+18,"Sherbourne St, north of Gerrard St",Northbound,only 2 prior year(s)
+19,"Sherbourne St, north of Gerrard St",Southbound,only 2 prior year(s)
+22,"Sherbourne St, north of Wellesley St E",Northbound,only 2 prior year(s)
+23,"Sherbourne St, north of Wellesley St E",Southbound,only 2 prior year(s)
+26,"Yonge St, north of Bloor St",Northbound,only 2 prior year(s)
+27,"Yonge St, north of Bloor St",Southbound,only 2 prior year(s)
+28,"Yonge St, north of Davenport Rd",Northbound,only 1 prior year(s)
+29,"Yonge St, north of Davenport Rd",Southbound,only 2 prior year(s)
+30,"Yonge St, north of Macpherson Ave",Northbound,only 2 prior year(s)
+31,"Yonge St, north of Macpherson Ave",Southbound,only 1 prior year(s)
+32,"Yonge St, north of St Clair Ave",Northbound,only 2 prior year(s)
+33,"Yonge St, north of St Clair Ave",Southbound,only 2 prior year(s)
+34,"Yonge St, south of Davisville Ave",Northbound,only 2 prior year(s)
+35,"Yonge St, south of Davisville Ave",Southbound,only 2 prior year(s)

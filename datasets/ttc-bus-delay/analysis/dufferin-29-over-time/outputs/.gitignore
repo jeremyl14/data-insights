@@ -1,0 +1,4 @@
+# Generated outputs from analyze.py
+*.png
+!monthly-summary.csv
+!code-monthly-breakdown.csv

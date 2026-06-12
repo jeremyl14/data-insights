@@ -1,0 +1,5 @@
+outs:
+- md5: 7aeeda01788957cc746c7ddbfd474a00
+  size: 559410230
+  hash: md5
+  path: bike-share-toronto-ridership-2022.csv

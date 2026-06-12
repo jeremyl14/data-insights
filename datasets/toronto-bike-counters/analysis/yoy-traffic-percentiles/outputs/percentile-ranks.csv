@@ -1,0 +1,7 @@
+years_of_data,rank,percentile_2025,mean_daily_2025,mean_daily_historical_avg,pct_change_vs_avg,location_name,location_dir_ids,direction
+4,3/3,66.7,37.2,36.1,3.1,"Keele St, south of Sheppard Ave W (multi-use path)","14,15",Combined
+4,3/3,66.7,40.3,39.2,2.8,"Keele St, north of Four Winds Dr (multi-use path)",37,Southbound
+4,3/3,66.7,20.5,19.6,4.3,"Keele St, south of Sheppard Ave W (multi-use path)",14,Northbound
+4,3/3,66.7,16.7,16.5,1.6,"Keele St, south of Sheppard Ave W (multi-use path)",15,Southbound
+4,2/3,33.3,68.0,76.9,-11.6,"Keele St, north of Four Winds Dr (multi-use path)","36,37",Combined
+4,1/3,0.0,27.7,37.7,-26.6,"Keele St, north of Four Winds Dr (multi-use path)",36,Northbound
