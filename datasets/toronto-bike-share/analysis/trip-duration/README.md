@@ -57,7 +57,7 @@ See `outputs/` for figures and tables.
 - The 60-minute cap on visualizations excludes long tail observations; summary statistics are computed on the full filtered range.
 - User type classification (Member vs Casual) is as reported by the system; it may not reflect actual membership status at trip time.
 - The yearly comparison covers 2016-2026; 2014-2015 are excluded because they lack a trip duration column. 2016 has user_type but only Member and Casual labels.
-- 2026 data is partial-year (Jan-May approximately), so its median will not be comparable to full years.
+- 2026 data is partial-year (Jan–Sep, from `raw/2026-10-30/`), so its median will not be comparable to full years.
 
 ## Files
 

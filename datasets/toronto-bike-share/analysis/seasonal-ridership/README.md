@@ -12,7 +12,7 @@ the seasonal pattern changed from 2016 to 2026?
 ## Data
 
 - **Primary dataset:** `toronto-bike-share`
-- **Years used:** 2016–2026 (2016 starts in July; 2026 is partial, Jan–Mar)
+- **Years used:** 2016–2026 (2016 starts in July; 2026 is partial, Jan–Sep, from `raw/2026-10-30/`)
 - **Filters applied:** Rows with timestamps outside 2014–2030 are excluded
   (removes a misparsed year-2000 row in the 2016 file).
 
@@ -58,11 +58,11 @@ Expected output: 1 figure + 2 CSVs (daily-rides.csv, yearly-totals.csv).
 | 2019 | 2,439,517 |
 | 2020 | 2,911,059 |
 | 2021 | 3,575,182 |
-| 2022 | 4,300,240 |
+| 2022 | 4,620,469 |
 | 2023 | 5,713,141 |
 | 2024 | 6,953,094 |
 | 2025 | 7,812,520 |
-| 2026 | 552,073 (Jan–Mar only) |
+| 2026 | 6,830,174 (Jan–Sep only) |
 
 Ridership has grown every year except the pandemic dip in 2020 (which
 still showed growth over 2019 in raw numbers, partly due to expanded
@@ -71,10 +71,12 @@ July–August, trough in January–February.
 
 ## Caveats
 
-- 2016 starts in July (partial year); 2026 ends in March (partial year).
+- 2016 starts in July (partial year); 2026 ends in September (partial year).
   Both are included in the plot but the daily counts and moving averages
   reflect only the months present in the data.
-- 2022 is missing January data in the upstream ZIP.
+- 2022 is read from the 2026-10-31 re-snapshot (`raw/2026-10-31/`), which
+  includes November; the older top-level 2022 file is missing it. (Earlier
+  notes said January was missing; that was wrong.)
 - Single city; not generalizable to other bike-share systems.
 - Pandemic-era service reductions (2020–2021) are not annotated in the
   upstream data. Ridership during this period reflects both reduced

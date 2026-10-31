@@ -19,6 +19,9 @@ import seaborn as sns
 REPO_ROOT = Path(__file__).resolve().parent.parents[3]
 WEATHER_DIR = REPO_ROOT / "datasets" / "toronto-weather-daily" / "raw"
 BIKE_DIR = REPO_ROOT / "datasets" / "toronto-bike-share" / "raw"
+# Newer snapshots than the top-level yearly files: 2022 with November
+# (raw/2026-10-31/), 2026 through September (raw/2026-10-30/)
+SNAPSHOT_OVERRIDES = {2022: "2026-10-31", 2026: "2026-10-30"}
 YEARS = [2025, 2026]
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -106,7 +109,7 @@ def load_weather() -> pd.DataFrame:
 def load_ridership() -> pd.DataFrame:
     frames = []
     for year in YEARS:
-        path = BIKE_DIR / f"bike-share-toronto-ridership-{year}.csv"
+        path = BIKE_DIR / SNAPSHOT_OVERRIDES.get(year, "") / f"bike-share-toronto-ridership-{year}.csv"
         if not path.exists():
             print(f"WARN: {path} not found, skipping", file=sys.stderr)
             continue

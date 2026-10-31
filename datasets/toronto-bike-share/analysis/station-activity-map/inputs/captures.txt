@@ -1,0 +1,23 @@
+# live GBFS https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information last_updated 2026-10-31
+20160623084539 http://feeds.bikesharetoronto.com:80/stations/stations.json
+20160725010807 http://feeds.bikesharetoronto.com:80/stations/stations.json
+20160825055439 http://feeds.bikesharetoronto.com:80/stations/stations.json
+20160914221009 https://feeds.bikesharetoronto.com/stations/stations.json
+20170303161826 https://feeds.bikesharetoronto.com/stations/stations.json
+20170329231721 https://feeds.bikesharetoronto.com/stations/stations.json
+20170330183017 http://feeds.bikesharetoronto.com/stations/stations.json
+20170726114519 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20190819094031 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20191021144817 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20210507022246 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20211027025026 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20220307133912 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20220706122732 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20230326051048 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20240413054106 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20241004201519 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20250425175804 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20250817130624 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20251010082450 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20260305164528 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information
+20260310030434 https://tor.publicbikesystem.net/ube/gbfs/v1/en/station_information

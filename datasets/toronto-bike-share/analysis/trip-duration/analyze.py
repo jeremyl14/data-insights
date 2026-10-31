@@ -6,6 +6,9 @@ import re
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 RAW_DIR = os.path.join(SCRIPT_DIR, "..", "..", "raw")
+# Newer snapshots than the top-level yearly files: 2022 with November
+# (raw/2026-10-31/), 2026 through September (raw/2026-10-30/)
+SNAPSHOT_OVERRIDES = {2022: "2026-10-31", 2026: "2026-10-30"}
 OUTPUTS_DIR = os.path.join(SCRIPT_DIR, "outputs")
 os.makedirs(OUTPUTS_DIR, exist_ok=True)
 
@@ -21,7 +24,7 @@ def normalize_col(c):
 
 def load_year(year):
     fname = f"bike-share-toronto-ridership-{year}.csv"
-    path = os.path.join(RAW_DIR, fname)
+    path = os.path.join(RAW_DIR, SNAPSHOT_OVERRIDES.get(year, ""), fname)
     if not os.path.exists(path):
         return None
     usecols = []

@@ -4,8 +4,9 @@ Plots daily trips (7-day moving average) on a single continuous date axis
 for all years with reliable full-year data. Overlays 311 bike
 infrastructure complaints for 2025 as secondary context.
 
-Partial years (2016 Jul–Dec, 2026 Jan–Mar) and 2022 (missing January) are
-excluded from the main plot but shown in the summary CSV.
+Partial years (2016 Jul–Dec, 2026 Jan–Sep) are excluded from the main plot
+but shown in the summary CSV. 2022 is read from the 2026-10-31 re-snapshot,
+which includes November.
 """
 
 from __future__ import annotations
@@ -20,6 +21,9 @@ import seaborn as sns
 
 REPO_ROOT = Path(__file__).resolve().parent.parents[3]
 RAW = REPO_ROOT / "datasets" / "toronto-bike-share" / "raw"
+# Newer snapshots than the top-level yearly files: 2022 with November
+# (raw/2026-10-31/), 2026 through September (raw/2026-10-30/)
+SNAPSHOT_OVERRIDES = {2022: "2026-10-31", 2026: "2026-10-30"}
 OUTPUTS = Path(__file__).resolve().parent / "outputs"
 OUTPUTS.mkdir(exist_ok=True)
 
@@ -40,7 +44,7 @@ def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def load_year(year: int) -> pd.DataFrame:
-    path = RAW / f"bike-share-toronto-ridership-{year}.csv"
+    path = RAW / SNAPSHOT_OVERRIDES.get(year, "") / f"bike-share-toronto-ridership-{year}.csv"
     if not path.exists():
         print(f"WARN: {path} not found", file=sys.stderr)
         return pd.DataFrame()

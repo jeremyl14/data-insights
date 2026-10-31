@@ -45,7 +45,7 @@ See `outputs/` for figures and tables.
 
 - User-type labeling changed across years; "Annual Member" (2019--2023) is assumed equivalent to "Member" (2016--2018, 2024--2026), and "Casual Member" is assumed equivalent to "Casual". The underlying membership product may have changed (e.g. new pass types introduced), so the mapping may not be exact.
 - 2020 ridership was heavily impacted by COVID-19 lockdowns; the drop and recovery pattern in that year should not be compared to baseline years without context.
-- Data for 2026 is partial (year-to-date at snapshot time), so the most recent months will be incomplete.
+- Data for 2026 is partial (Jan–Sep, from the 2026-10-30 re-snapshot in `raw/2026-10-30/`).
 - No weather, holiday, or station-coverage covariates are included; seasonal patterns likely reflect weather more than user-type preference shifts.
 - The rolling average masks within-month variation and edge effects at series boundaries.
 

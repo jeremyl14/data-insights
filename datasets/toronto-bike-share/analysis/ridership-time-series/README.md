@@ -14,7 +14,7 @@ What does Bike Share Toronto daily ridership look like on a single continuous ti
 - **Joins with:** 311 bike infrastructure complaints (2025 only, from `raw/311-bike-infrastructure-daily-2025.csv`)
 - **Snapshot dates:** Raw ridership CSVs as of 2026-06-10
 - **Filters applied:**
-- Years 2017–2026 (2016 partial Jul–Dec excluded; 2026 Jan–Mar included)
+- Years 2017–2026 (2016 partial Jul–Dec excluded; 2026 Jan–Sep included, from `raw/2026-10-30/`)
 - Rows with unparseable start_time dropped
 
 ## Method
@@ -47,11 +47,11 @@ Expected output: 1 figure (PNG) + 3 CSVs in `outputs/`
 | 2019 | 2,439,517 |
 | 2020 | 2,911,059 |
 | 2021 | 3,575,182 |
-| 2022 | 4,300,240 |
+| 2022 | 4,620,469 |
 | 2023 | 5,713,141 |
 | 2024 | 6,953,094 |
 | 2025 | 7,812,520 |
-| 2026 | 552,073 (Jan–Mar only) |
+| 2026 | 6,830,174 (Jan–Sep only) |
 
 Ridership has grown every year from 2017 to 2025. The seasonal
 oscillation (summer peak, winter trough) amplifies over time as the
@@ -68,10 +68,10 @@ periods.
 
 ## Caveats
 
-- 2022 is missing January data from the upstream ZIP, so its annual total undercounts by ~1 month.
+- 2022 is read from the 2026-10-31 re-snapshot (`raw/2026-10-31/`), which includes November; the older top-level 2022 file is missing it and undercounts the year by 320,229 trips. (Earlier notes said January was missing; that was wrong.)
 - Year-over-year growth conflates system expansion (new stations, more bikes) with increased per-station demand. This is a system-level metric, not a demand metric.
 - The 2020–2021 pandemic period had station closures; ridership reflects both reduced demand and reduced availability.
-- 2026 is partial-year (Jan–Mar only) and appears as the trailing edge of the plot.
+- 2026 is partial-year (Jan–Sep only) and appears as the trailing edge of the plot.
 - No adjustment for station coverage or fleet size. A per-station or per-bike normalization would show a different pattern.
 - The official open data lags 2–3 months; third-party sources (BikeRacoon) provide more timely estimates but those are inferred from station availability changes, not official trip records (~2% undercount).
 - 311 data is only available for 2025; it is shown on a secondary axis to provide context for winter ridership dips, not for direct comparison with ridership volume.

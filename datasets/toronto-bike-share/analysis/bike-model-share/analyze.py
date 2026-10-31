@@ -7,6 +7,9 @@ import seaborn as sns
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parents[3]
 DATA_DIR = REPO_ROOT / "datasets" / "toronto-bike-share" / "raw"
+# Newer snapshots than the top-level yearly files: 2022 with November
+# (raw/2026-10-31/), 2026 through September (raw/2026-10-30/)
+SNAPSHOT_OVERRIDES = {2022: "2026-10-31", 2026: "2026-10-30"}
 OUTPUTS_DIR = pathlib.Path(__file__).resolve().parent / "outputs"
 
 YEARS = [2024, 2025, 2026]
@@ -35,7 +38,7 @@ USER_TYPE_MAP = {
 
 
 def load_year(year: int) -> pd.DataFrame:
-    path = DATA_DIR / f"bike-share-toronto-ridership-{year}.csv"
+    path = DATA_DIR / SNAPSHOT_OVERRIDES.get(year, "") / f"bike-share-toronto-ridership-{year}.csv"
     if not path.exists():
         print(f"WARN: {path} not found; skipping {year}", file=sys.stderr)
         return pd.DataFrame(columns=["year", "month", "bike_model", "user_type"])
@@ -240,7 +243,7 @@ def main() -> None:
         ax1.text(
             last_partial["date"],
             ax1.get_ylim()[1] * 0.95,
-            "2026 partial\n(Jan–Mar)",
+            "2026 partial\n(Jan–Sep)",
             fontsize=8,
             color="#666666",
             ha="left",

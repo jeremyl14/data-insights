@@ -14,7 +14,7 @@ their e-bike usage?
 
 - **Primary dataset:** `toronto-bike-share` ([README](../../README.md))
 - **Joins with:** none
-- **Snapshot dates:** `raw/bike-share-toronto-ridership-2024.csv`, `raw/bike-share-toronto-ridership-2025.csv`
+- **Snapshot dates:** `raw/bike-share-toronto-ridership-2024.csv`, `raw/bike-share-toronto-ridership-2025.csv`, `raw/2026-10-30/bike-share-toronto-ridership-2026.csv` (Jan–Sep 2026; monthly outputs only, the results below cover 2024–2025)
 - **Filters applied:** Only 2024 and 2025 data used (Bike_Model column does not exist in earlier years)
 
 ## Method

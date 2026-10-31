@@ -12,6 +12,9 @@ import pandas as pd
 import seaborn as sns
 
 RAW_DIR = Path(__file__).resolve().parent.parent.parent / "raw"
+# Newer snapshots than the top-level yearly files: 2022 with November
+# (raw/2026-10-31/), 2026 through September (raw/2026-10-30/)
+SNAPSHOT_OVERRIDES = {2022: "2026-10-31", 2026: "2026-10-30"}
 OUT_DIR = Path(__file__).resolve().parent / "outputs"
 YEARS = range(2016, 2027)
 
@@ -23,7 +26,7 @@ def normalize_columns(cols: pd.Index) -> pd.Index:
 
 
 def load_year(year: int) -> pd.DataFrame:
-    path = RAW_DIR / f"bike-share-toronto-ridership-{year}.csv"
+    path = RAW_DIR / SNAPSHOT_OVERRIDES.get(year, "") / f"bike-share-toronto-ridership-{year}.csv"
     if not path.exists():
         print(f"  skipping {year}: file not found")
         return pd.DataFrame()

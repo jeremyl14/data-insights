@@ -4,12 +4,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 RAW_DIR = pathlib.Path(__file__).resolve().parents[2] / "raw"
+# Newer snapshots than the top-level yearly files: 2022 with November
+# (raw/2026-10-31/), 2026 through September (raw/2026-10-30/)
+SNAPSHOT_OVERRIDES = {2022: "2026-10-31", 2026: "2026-10-30"}
 OUTPUTS_DIR = pathlib.Path(__file__).resolve().parent / "outputs"
 YEARS = range(2016, 2027)
 
 
 def load_year(year):
-    path = RAW_DIR / f"bike-share-toronto-ridership-{year}.csv"
+    path = RAW_DIR / SNAPSHOT_OVERRIDES.get(year, "") / f"bike-share-toronto-ridership-{year}.csv"
     df = pd.read_csv(path, dtype=str)
     cols = {}
     for raw_col in df.columns:
@@ -31,7 +34,7 @@ def load_year(year):
 def main():
     frames = []
     for year in YEARS:
-        path = RAW_DIR / f"bike-share-toronto-ridership-{year}.csv"
+        path = RAW_DIR / SNAPSHOT_OVERRIDES.get(year, "") / f"bike-share-toronto-ridership-{year}.csv"
         if not path.exists():
             print(f"Skipping {year}: file not found")
             continue

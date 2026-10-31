@@ -5,6 +5,9 @@ import pandas as pd
 import seaborn as sns
 
 DATA_DIR = pathlib.Path(__file__).resolve().parent.parent.parent / "raw"
+# Newer snapshots than the top-level yearly files: 2022 with November
+# (raw/2026-10-31/), 2026 through September (raw/2026-10-30/)
+SNAPSHOT_OVERRIDES = {2022: "2026-10-31", 2026: "2026-10-30"}
 OUTPUTS_DIR = pathlib.Path(__file__).resolve().parent / "outputs"
 YEARS = range(2016, 2027)
 
@@ -17,7 +20,7 @@ USER_TYPE_MAP = {
 
 
 def load_year(year: int) -> pd.DataFrame:
-    path = DATA_DIR / f"bike-share-toronto-ridership-{year}.csv"
+    path = DATA_DIR / SNAPSHOT_OVERRIDES.get(year, "") / f"bike-share-toronto-ridership-{year}.csv"
     df = pd.read_csv(path, low_memory=False)
     df.columns = [c.strip().lower().replace(" ", "_") for c in df.columns]
     df = df.rename(columns={"trip_start_time": "start_time"})
@@ -37,7 +40,7 @@ def main() -> None:
 
     frames = []
     for year in YEARS:
-        path = DATA_DIR / f"bike-share-toronto-ridership-{year}.csv"
+        path = DATA_DIR / SNAPSHOT_OVERRIDES.get(year, "") / f"bike-share-toronto-ridership-{year}.csv"
         if not path.exists():
             print(f"Skipping {year}: file not found")
             continue

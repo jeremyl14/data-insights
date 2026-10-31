@@ -57,7 +57,7 @@ Expected output: 2 figures + 1 CSV.
 | 2019 | 469 | 2,439,517 | 23.8% |
 | 2020 | 679 | 2,910,515 | 35.7% |
 | 2021 | 733 | 3,571,502 | 40.1% |
-| 2022 | 608 | 4,136,461 | 61.9%** |
+| 2022 | 609 | 4,437,003 | 62.3%** |
 | 2023 | 592 | 5,118,066 | 93.6%** |
 | 2024 | 879 | 6,953,094 | 22.8% |
 | 2025 | 1,059 | 7,812,513 | 27.4% |
@@ -71,7 +71,7 @@ Expected output: 2 figures + 1 CSV.
 - 2018→2019: +110 stations (+30.6%)
 - 2024→2025: +180 stations (+20.5%)
 
-**Notable declines:** Station count dropped from 733 (2021) to 608 (2022, −17.1%) and 592 (2023, −2.6%), likely due to station renaming/consolidation and data entry changes rather than actual removals.
+**Notable declines:** Station count dropped from 733 (2021) to 609 (2022, −16.9%) and 592 (2023, −2.8%), likely due to station renaming/consolidation and data entry changes rather than actual removals.
 
 **2017→2025 growth:** Stations grew from 293 to 1,059 — a 3.6× increase over 8 full years.
 
@@ -84,12 +84,12 @@ See `outputs/active-stations-by-year.png` for the dual-axis chart and `outputs/c
 - "Active" means a station had at least one trip recorded, not that it existed in the official station list. Some stations may be renamed year to year (e.g., "King/John" → "King St W / John St"); the count treats different spellings as separate stations.
 - Station count may differ from official counts due to data entry variations and the rename/re-number that happened in 2019.
 - 2016 and 2026 are excluded (partial years).
-- 2022 is missing January data in the upstream source, which may slightly undercount active stations.
+- 2022 is read from the 2026-10-31 re-snapshot (`raw/2026-10-31/`), which includes November; the older top-level 2022 file is missing it. (Earlier notes said January was missing; that was wrong.)
 - The drop in station count from 2021 to 2022–2023 likely reflects naming consolidation rather than physical station removal; ridership continued to grow during this period.
 - This analysis uses start station names only; end station names could add a small number of additional stations.
 - No station ID matching is done across years (IDs were renumbered in 2019), so the year-over-year comparison is by name, not by unique station identity.
-- **2023 user_type labels are unreliable.** The source data labels 93.6% of trips as "Casual Member" — a dramatic and implausible inversion from 2022 (61.9%) and 2024 (22.8%). This is almost certainly a labeling bug in the 2023 upstream data. Casual share for 2023 should not be interpreted as real.
-- **2022 user_type labels are also suspect.** The 61.9% casual share in 2022 is higher than any other year except 2023, and given the 2023 labeling bug, 2022 may also be affected. The upstream used "Casual Member"/"Annual Member" labels in 2018–2023; the 2022 ratios may also reflect a partial label swap.
+- **2023 user_type labels are unreliable.** The source data labels 93.6% of trips as "Casual Member" — a dramatic and implausible inversion from 2022 (62.3%) and 2024 (22.8%). This is almost certainly a labeling bug in the 2023 upstream data. Casual share for 2023 should not be interpreted as real.
+- **2022 user_type labels are also suspect.** The 62.3% casual share in 2022 is higher than any other year except 2023, and given the 2023 labeling bug, 2022 may also be affected. The upstream used "Casual Member"/"Annual Member" labels in 2018–2023; the 2022 ratios may also reflect a partial label swap.
 - **2017 user_type coverage is low.** Only ~31% of trips have a user_type value; casual share for 2017 is computed from that subset only and may not be representative.
 
 ## Files

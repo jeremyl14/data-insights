@@ -17,6 +17,9 @@ import seaborn as sns
 
 REPO_ROOT = Path(__file__).resolve().parent.parents[3]
 RAW_DIR = REPO_ROOT / "datasets" / "toronto-bike-share" / "raw"
+# 2022: the 2026-10-31 re-snapshot includes November, which the top-level
+# 2022 file is missing (see raw/2026-10-31/SOURCE.md)
+SNAPSHOT_OVERRIDES = {2022: "2026-10-31"}
 OUTPUTS = Path(__file__).resolve().parent / "outputs"
 OUTPUTS.mkdir(exist_ok=True)
 
@@ -76,7 +79,7 @@ def find_start_station_col(df: pd.DataFrame) -> str | None:
 
 
 def load_year(year: int) -> pd.DataFrame | None:
-    path = RAW_DIR / f"bike-share-toronto-ridership-{year}.csv"
+    path = RAW_DIR / SNAPSHOT_OVERRIDES.get(year, "") / f"bike-share-toronto-ridership-{year}.csv"
     if not path.exists():
         print(f"WARN: {path} not found; skipping {year}", file=sys.stderr)
         return None

@@ -21,7 +21,7 @@ Both datasets are batch snapshots stored in `raw/` (see `raw/SOURCE.md`).
 
 1. Load trip-level ridership data for 2025 and 2026, normalize columns, parse timestamps, and count trips per calendar date.
 2. Compute a 7-day centered moving average of daily trips.
-3. Load 311 daily complaint counts for both years and merge with ridership by date.
+3. Load 311 daily complaint counts for both years and merge with ridership by date. Ridership is cut at the last date both 311 and weather cover (2026-05-30).
 4. Plot daily trips as a shaded area with the 7-day MA as a line (left y-axis), 311 total complaints as orange bars (right y-axis, offset), and snowfall on its own y-axis (far right) as light blue bars. Group consecutive days with ≥2 cm snowfall into "snow events", highlight each event span with a blue band, and annotate total cm.
 5. Add alternating grey year bands.
 
@@ -38,7 +38,7 @@ Expected runtime: ~30 seconds. Outputs are written to `outputs/`.
 ## Results
 
 - **2025**: 7,812,520 trips, 1,123 bike infrastructure 311 complaints.
-- **2026 (Jan 1 – Mar 31)**: 552,073 trips, 1,415 complaints (311 data extends through May but bike-share data only through March).
+- **2026 (Jan 1 – May 30)**: 1,889,816 trips, 1,415 complaints. Bike-share data (re-snapshot in `raw/2026-10-30/`) now runs through September, but the analysis stops at May 30, the last day the 311 data covers.
 - 311 bike infrastructure complaints in early 2026 already exceed all of 2025 (1,415 vs 1,123).
 - Winter maintenance dominates: 350 in all of 2025 vs 1,180 in Jan–May 2026 alone.
 - The chart shows snowfall (light blue) aligning with both ridership dips and 311 spikes, confirming weather as the common driver.
@@ -49,7 +49,7 @@ The chart shows ridership following its strong seasonal pattern while 311 compla
 
 - **311 complaints measure reporting behavior, not road conditions.** A spike in complaints could reflect increased awareness of the 311 system, a viral social media post, or a councillor directing constituents to report — not necessarily worse infrastructure.
 - **The 311 bike infrastructure categories are new (started in 2025).** Year-over-year comparisons are unreliable because reporting culture, category definitions, and city promotion of these channels may change.
-- **2026 data is partial**: bike-share through March, 311 through May, weather through May.
+- **2026 data is partial**: bike-share through September, 311 through May 30, weather through June 10. Everything is cut at May 30 so days without 311 or weather data don't show up as zero complaints or zero snow.
 - **Triple y-axes can mislead.** The visual relationship between trips, complaints, and snowfall is suggestive, not causal. Winter months naturally have both low ridership and high complaint volume, but one does not cause the other.
 - **No causal model.** This is a descriptive visualization; see `snow-clearing-event-study` and `weather-lag-regression` for statistical analysis of weather effects on ridership.
 

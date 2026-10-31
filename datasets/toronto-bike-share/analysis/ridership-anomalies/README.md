@@ -69,8 +69,11 @@ list of sustained dip events, sorted by total lost trips.
 - January and February are included because winter infrastructure
   disruptions (snow clearing delays, ice) are exactly the events this
   analysis is designed to detect.
-- 2026 is partial year (Jan–Mar only).
-- 2022 is missing January data from the upstream ZIP.
+- 2026 is partial year (Jan–Sep, from the 2026-10-30 re-snapshot in
+  `raw/2026-10-30/`).
+- 2022 is read from the 2026-10-31 re-snapshot (`raw/2026-10-31/`), which
+  includes November; the older top-level 2022 file is missing it. (Earlier
+  notes said January was missing; that was wrong.)
 
 ## Files
 

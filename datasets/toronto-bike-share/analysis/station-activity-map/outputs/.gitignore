@@ -1,0 +1,5 @@
+# Generated outputs from analyze.py
+# The HTML embeds ~6 MB of data and regenerates in ~20 s; keep it out of git.
+*.html
+*.mp4
+!summary.csv

@@ -2,7 +2,7 @@
 
 Plots daily bike-share trips (area + moving average) with 311 bike
 infrastructure complaint bars and snowfall on secondary axes, covering
-full-year 2025 and partial 2026.
+full-year 2025 and partial 2026 (through the last day the 311 and weather data cover).
 """
 
 from __future__ import annotations
@@ -17,6 +17,9 @@ import seaborn as sns
 
 REPO_ROOT = Path(__file__).resolve().parent.parents[3]
 RAW_BIKE = REPO_ROOT / "datasets" / "toronto-bike-share" / "raw"
+# Newer snapshots than the top-level yearly files: 2022 with November
+# (raw/2026-10-31/), 2026 through September (raw/2026-10-30/)
+SNAPSHOT_OVERRIDES = {2022: "2026-10-31", 2026: "2026-10-30"}
 RAW_WEATHER = REPO_ROOT / "datasets" / "toronto-weather-daily" / "raw"
 OUTPUTS = Path(__file__).resolve().parent / "outputs"
 OUTPUTS.mkdir(exist_ok=True)
@@ -42,7 +45,7 @@ def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
 def load_ridership() -> pd.DataFrame:
     frames = []
     for year in YEARS:
-        path = RAW_BIKE / f"bike-share-toronto-ridership-{year}.csv"
+        path = RAW_BIKE / SNAPSHOT_OVERRIDES.get(year, "") / f"bike-share-toronto-ridership-{year}.csv"
         if not path.exists():
             continue
         df = pd.read_csv(path, low_memory=False)
@@ -128,6 +131,15 @@ def main() -> int:
     complaints = load_311()
     print("Loading weather...", file=sys.stderr)
     weather = load_weather()
+
+    # Bike data runs past the 311 and weather snapshots. Keep only days all three
+    # cover; otherwise the left joins below would turn "no data" into 0 complaints,
+    # 0 snow and a temperature forward-filled for months.
+    coverage_end = min(
+        complaints["date"].max(), weather.loc[weather["mean_temp_c"].notna(), "date"].max()
+    )
+    daily = daily[daily["date"] <= coverage_end].reset_index(drop=True)
+    print(f"  common coverage ends {coverage_end:%Y-%m-%d}", file=sys.stderr)
 
     daily["trips_ma"] = (
         daily["trips"].rolling(MA_WINDOW, min_periods=3, center=True).mean()

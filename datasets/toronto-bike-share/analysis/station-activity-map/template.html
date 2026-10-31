@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bike Share Activity Map</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --muted: #898781;
+  --grid: #e1e0d9;
+  --axis: #c3c2b7;
+  --border: rgba(11, 11, 11, 0.10);
+  --land: #f3f2ee;
+  --ward-line: #d6d4cc;
+  --water: #e8ecee;
+  --series-1: #2a78d6;
+  --series-1-wash: rgba(42, 120, 214, 0.14);
+  --accent-ink: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --ink: #f0efec;
+    --ink-2: #c3c2b7;
+    --muted: #898781;
+    --grid: #2c2c2a;
+    --axis: #383835;
+    --border: rgba(255, 255, 255, 0.10);
+    --land: #222220;
+    --ward-line: #383835;
+    --water: #141618;
+    --series-1: #3987e5;
+    --series-1-wash: rgba(57, 135, 229, 0.18);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d;
+  --surface: #1a1a19;
+  --ink: #f0efec;
+  --ink-2: #c3c2b7;
+  --muted: #898781;
+  --grid: #2c2c2a;
+  --axis: #383835;
+  --border: rgba(255, 255, 255, 0.10);
+  --land: #222220;
+  --ward-line: #383835;
+  --water: #141618;
+  --series-1: #3987e5;
+  --series-1-wash: rgba(57, 135, 229, 0.18);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--page); color: var(--ink); }
+body { font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 1200px; margin: 0 auto; padding: 24px 16px 40px; }
+h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.01em; }
+.sub { color: var(--ink-2); margin: 0 0 16px; max-width: 70ch; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 12px; }
+.date { font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; min-width: 9ch; }
+.date small { display: block; font-size: 12px; font-weight: 400; color: var(--muted); }
+button, select {
+  font: inherit; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; cursor: pointer;
+}
+button:hover, select:hover { border-color: var(--axis); }
+button:focus-visible, select:focus-visible, canvas:focus-visible { outline: 2px solid var(--series-1); outline-offset: 2px; }
+.play { min-width: 84px; font-weight: 600; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.seg button { border: 0; border-radius: 0; background: transparent; color: var(--ink-2); }
+.seg button[aria-pressed="true"] { background: var(--series-1); color: var(--accent-ink); }
+.spacer { flex: 1; }
+.label { color: var(--muted); font-size: 12px; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 16px; }
+@media (max-width: 860px) { .layout { grid-template-columns: minmax(0, 1fr); } }
+.mapwrap { position: relative; overflow: hidden; }
+#map { display: block; width: 100%; height: min(68vh, 640px); min-height: 360px; touch-action: none; cursor: grab; }
+#map.dragging { cursor: grabbing; }
+.legend { position: absolute; left: 12px; bottom: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px; color: var(--ink-2); }
+.legend .title { color: var(--ink); font-weight: 600; margin-bottom: 4px; }
+.legend canvas { display: block; width: 200px; height: 10px; border-radius: 3px; }
+.legend .ticks { position: relative; height: 16px; width: 200px; font-variant-numeric: tabular-nums; color: var(--muted); }
+.legend .ticks span { position: absolute; transform: translateX(-50%); top: 2px; white-space: nowrap; }
+.notice { position: absolute; left: 12px; top: 12px; right: 60px; max-width: 420px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px; color: var(--ink-2); display: none; }
+.notice b { color: var(--ink); }
+.zoom { position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 4px; }
+.zoom button { width: 32px; height: 32px; padding: 0; }
+.tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); display: none; max-width: 260px; z-index: 2; }
+.tip b { display: block; font-weight: 600; margin-bottom: 2px; }
+.tip .row { display: flex; justify-content: space-between; gap: 16px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.side { padding: 12px 14px; }
+.side h2 { font-size: 13px; font-weight: 600; margin: 0 0 8px; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th { text-align: left; color: var(--muted); font-weight: 500; padding: 4px 0; border-bottom: 1px solid var(--grid); }
+td { padding: 5px 0; border-bottom: 1px solid var(--grid); color: var(--ink-2); vertical-align: top; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; padding-left: 8px; white-space: nowrap; }
+td.name { color: var(--ink); padding-right: 4px; }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.stat .v { font-size: 18px; font-weight: 600; }
+.stat .k { font-size: 11px; color: var(--muted); }
+.strip { margin-top: 16px; padding: 12px 14px 8px; position: relative; }
+.strip h2 { font-size: 13px; font-weight: 600; margin: 0 0 2px; }
+.strip p { margin: 0 0 6px; font-size: 12px; color: var(--muted); }
+#strip { display: block; width: 100%; height: 150px; cursor: pointer; touch-action: none; }
+.notes { margin-top: 16px; color: var(--ink-2); font-size: 12px; max-width: 90ch; }
+.notes li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Bike Share Toronto station activity, 2018–2026</h1>
+  <p class="sub">Each dot is a station, coloured by trips started plus trips ended there in the 7 days up to the date shown. The colour scale is fixed across all frames (cube-root, so both quiet and busy stations stay distinguishable). Switch to <em>Share of system</em> to see where riding happens independent of overall growth.</p>
+
+  <div class="controls">
+    <button class="play" id="play" aria-label="Play">▶ Play</button>
+    <label class="label" for="speed">Speed</label>
+    <select id="speed">
+      <option value="15">2 weeks / s</option>
+      <option value="45" selected>6 weeks / s</option>
+      <option value="120">4 months / s</option>
+    </select>
+    <div class="seg" role="group" aria-label="Colour by">
+      <button id="mode-count" aria-pressed="true">Trips</button>
+      <button id="mode-share" aria-pressed="false">Share of system</button>
+    </div>
+    <span class="spacer"></span>
+    <div class="date" id="date" aria-live="polite"></div>
+  </div>
+
+  <div class="layout">
+    <div class="card mapwrap">
+      <canvas id="map" tabindex="0" aria-label="Map of station activity; use left and right arrow keys to step through days"></canvas>
+      <div class="notice" id="notice" role="status"></div>
+      <div class="zoom">
+        <button id="zin" aria-label="Zoom in">+</button>
+        <button id="zout" aria-label="Zoom out">−</button>
+        <button id="zfit" aria-label="Reset view" title="Reset view">⤢</button>
+      </div>
+      <div class="legend" id="legend">
+        <div class="title" id="legend-title"></div>
+        <canvas id="ramp" width="400" height="20"></canvas>
+        <div class="ticks" id="ticks"></div>
+      </div>
+      <div class="tip" id="tip"></div>
+    </div>
+    <aside class="card side">
+      <div class="stats">
+        <div class="stat"><div class="v" id="s-total"></div><div class="k">trip ends, 7 days</div></div>
+        <div class="stat"><div class="v" id="s-active"></div><div class="k">active stations</div></div>
+      </div>
+      <h2>Busiest stations this week</h2>
+      <table>
+        <thead><tr><th>Station</th><th class="num">Trips</th><th class="num">Share</th></tr></thead>
+        <tbody id="top"></tbody>
+      </table>
+    </aside>
+  </div>
+
+  <div class="card strip">
+    <h2>System activity</h2>
+    <p>Trip starts + ends per 7 days, all mapped stations. Click or drag to jump to a date.</p>
+    <canvas id="strip" aria-label="System activity over time; click to choose a date"></canvas>
+    <div class="tip" id="strip-tip"></div>
+  </div>
+
+  <ul class="notes" id="notes">
+    <li>Source: City of Toronto Open Data, Bike Share Toronto Ridership (trip records 2018 – Sep 2026). Station locations from the Bike Share Toronto GBFS feed and Wayback Machine captures of it.</li>
+    <li>Each trip counts twice: once at its start station on its start date, once at its end station on its end date.</li>
+    <li>A station that moved is drawn at the location valid on each date; reused station IDs are split by location.</li>
+    <li id="gap-note"></li>
+  </ul>
+</main>
+
+<script>
+const DATA = /*__DATA__*/null;
+
+// ---------- data ----------
+const bin = atob(DATA.values);
+const buf = new ArrayBuffer(bin.length);
+const bytes = new Uint8Array(buf);
+for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+const VALUES = new Uint16Array(buf);
+const DOTS = DATA.dots.map(([id, name, lat, lon, from, len, offset]) => ({ id, name, lat, lon, from, len, offset }));
+const NDAYS = DATA.ndays;
+const T0 = Date.UTC(...DATA.start.split("-").map((v, i) => i === 1 ? v - 1 : +v));
+const dayDate = d => new Date(T0 + d * 86400000);
+const fmtDate = d => dayDate(d).toLocaleDateString("en-CA", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
+const fmtInt = n => n.toLocaleString("en-CA");
+const fmtK = n => n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) + "M" : n >= 1e3 ? Math.round(n / 1e3) + "k" : String(n);
+const fmtPct = s => {
+  const p = s * 100;
+  return (p >= 1 ? p.toFixed(1) : p >= 0.01 ? p.toFixed(2) : String(+p.toPrecision(1))) + "%";
+};
+const valueAt = (dot, d) => (d >= dot.from && d < dot.from + dot.len) ? VALUES[dot.offset + d - dot.from] : 0;
+// A frame is incomplete when its 7-day window overlaps a period with no published trips
+const gapFor = d => DATA.gaps.find(([a, b]) => d >= a && d - DATA.window + 1 <= b);
+const fmtRange = ([a, b]) => `${fmtDate(a)} – ${fmtDate(b)}`;
+
+// ---------- colour: one-hue sequential, log scale, fixed domain ----------
+const RAMP = ["#cde2fb","#b7d3f6","#9ec5f4","#86b6ef","#6da7ec","#5598e7","#3987e5","#2a78d6","#256abf","#1c5cab","#184f95","#104281","#0d366b"];
+// Dots are marks that must stay visible, so the end nearest the map is trimmed:
+// light mode starts at step 250 (#86b6ef), dark mode at step 600 (#184f95).
+const RAMP_LIGHT = RAMP.slice(3);
+const RAMP_DARK = RAMP.slice(0, 11).reverse(); // dark mode: low sits darkest, high lightest
+const hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+let rampRGB;
+function isDark() {
+  const t = document.documentElement.dataset.theme;
+  if (t) return t === "dark";
+  return matchMedia("(prefers-color-scheme: dark)").matches;
+}
+function setRamp() { rampRGB = (isDark() ? RAMP_DARK : RAMP_LIGHT).map(hex); }
+function rampColor(t) {
+  t = Math.min(1, Math.max(0, t));
+  const x = t * (rampRGB.length - 1), i = Math.min(rampRGB.length - 2, Math.floor(x)), f = x - i;
+  const a = rampRGB[i], b = rampRGB[i + 1];
+  return `rgb(${a.map((v, k) => Math.round(v + (b[k] - v) * f)).join(",")})`;
+}
+let mode = "count";
+function domain() { return DATA.domain[mode]; }
+// Trips: cube-root scale from 0. Log spent most of the ramp on quiet stations
+// (downtown growth barely changed colour); square root squeezed quiet stations
+// into the palest steps. Share: log scale, since it spans several orders of magnitude.
+function scaleT(v) {
+  const [lo, hi] = domain();
+  if (mode === "count") return Math.cbrt(v) / Math.cbrt(hi);
+  return (Math.log(v) - Math.log(lo)) / (Math.log(hi) - Math.log(lo));
+}
+function metric(dot, d) {
+  const v = valueAt(dot, d);
+  return mode === "count" ? v : v / Math.max(1, DATA.total[d]);
+}
+
+// ---------- projection ----------
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const map = document.getElementById("map");
+const mctx = map.getContext("2d");
+let W = 0, H = 0, DPR = 1;
+const LAT0 = 43.70, KX = Math.cos(LAT0 * Math.PI / 180);
+let bounds = (() => {
+  let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+  for (const f of DATA.wards.features) for (const poly of f.geometry.coordinates) for (const [lon, lat] of poly[0]) {
+    x0 = Math.min(x0, lon * KX); x1 = Math.max(x1, lon * KX); y0 = Math.min(y0, -lat); y1 = Math.max(y1, -lat);
+  }
+  return { x0, x1, y0, y1 };
+})();
+let view = { k: 1, tx: 0, ty: 0 };
+function fitView() {
+  // Start framed on where stations actually are, with some room around them
+  let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+  for (const d of DOTS) { x0 = Math.min(x0, d.lon * KX); x1 = Math.max(x1, d.lon * KX); y0 = Math.min(y0, -d.lat); y1 = Math.max(y1, -d.lat); }
+  const pad = 0.06 * Math.max(x1 - x0, y1 - y0);
+  x0 -= pad; x1 += pad; y0 -= pad; y1 += pad;
+  const k = Math.min(W / (x1 - x0), H / (y1 - y0));
+  view = { k, tx: (W - k * (x1 - x0)) / 2 - k * x0, ty: (H - k * (y1 - y0)) / 2 - k * y0 };
+}
+const px = (lon, lat) => [view.k * lon * KX + view.tx, view.k * -lat + view.ty];
+
+// ---------- map drawing ----------
+let day = NDAYS - 1;
+let screenDots = [];
+function drawMap() {
+  mctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  mctx.fillStyle = css("--surface");
+  mctx.fillRect(0, 0, W, H);
+  // wards
+  mctx.beginPath();
+  for (const f of DATA.wards.features) for (const poly of f.geometry.coordinates) {
+    poly[0].forEach(([lon, lat], i) => { const [x, y] = px(lon, lat); i ? mctx.lineTo(x, y) : mctx.moveTo(x, y); });
+    mctx.closePath();
+  }
+  mctx.fillStyle = css("--land");
+  mctx.fill();
+  mctx.lineWidth = 1;
+  mctx.strokeStyle = css("--ward-line");
+  mctx.stroke();
+  // lake over the wards: ward 10 extends into the harbour around Toronto Island,
+  // so the water has to be cut back out for the shoreline and islands to show
+  mctx.fillStyle = css("--water");
+  for (const f of DATA.lake.features) {
+    mctx.beginPath();
+    for (const ring of f.geometry.coordinates) {
+      ring.forEach(([lon, lat], i) => { const [x, y] = px(lon, lat); i ? mctx.lineTo(x, y) : mctx.moveTo(x, y); });
+      mctx.closePath();
+    }
+    mctx.fill("evenodd");
+  }
+  // dots, low values first so busy stations sit on top
+  const vis = [];
+  for (const dot of DOTS) {
+    const v = metric(dot, day);
+    if (v > 0) vis.push([v, dot]);
+  }
+  vis.sort((a, b) => a[0] - b[0]);
+  const zoomBoost = Math.min(2.2, Math.max(1, Math.sqrt(view.k / baseK)));
+  const ring = css("--surface");
+  screenDots = [];
+  for (const [v, dot] of vis) {
+    const t = scaleT(v);
+    const r = (1.6 + 2.6 * Math.min(1, Math.max(0, t))) * zoomBoost;
+    const [x, y] = px(dot.lon, dot.lat);
+    if (x < -10 || y < -10 || x > W + 10 || y > H + 10) continue;
+    mctx.beginPath();
+    mctx.arc(x, y, r, 0, 2 * Math.PI);
+    mctx.fillStyle = rampColor(t);
+    mctx.fill();
+    mctx.lineWidth = 0.75;
+    mctx.strokeStyle = ring;
+    mctx.stroke();
+    screenDots.push({ x, y, r, dot, v });
+  }
+}
+
+// ---------- legend ----------
+function drawLegend() {
+  const c = document.getElementById("ramp"), g = c.getContext("2d");
+  for (let i = 0; i < c.width; i++) { g.fillStyle = rampColor(i / (c.width - 1)); g.fillRect(i, 0, 1, c.height); }
+  const [lo, hi] = domain();
+  document.getElementById("legend-title").textContent =
+    mode === "count" ? "Trip starts + ends, 7 days (cube-root)" : "Share of system activity, 7 days (log)";
+  const ticks = [];
+  if (mode === "count") { for (const v of [0, 10, 100, 500, 1000]) if (v < hi) ticks.push([v, fmtK(v)]); ticks.push([hi, fmtK(hi) + "+"]); }
+  else { for (let e = Math.ceil(Math.log10(lo)); 10 ** e <= hi; e++) ticks.push([10 ** e, fmtPct(10 ** e)]); ticks.push([hi, fmtPct(hi) + "+"]); }
+  const el = document.getElementById("ticks");
+  el.innerHTML = "";
+  const placed = [];
+  for (const [v, label] of ticks.reverse()) {  // place the end tick first so it wins collisions
+    const pos = Math.min(1, Math.max(0, scaleT(v))) * 200;
+    if (placed.some(p => Math.abs(p - pos) < 30)) continue;
+    placed.push(pos);
+    const s = document.createElement("span");
+    s.style.left = pos + "px";
+    s.textContent = label;
+    el.appendChild(s);
+  }
+}
+
+// ---------- side panel ----------
+function drawSide() {
+  const active = [];
+  for (const dot of DOTS) { const v = valueAt(dot, day); if (v > 0) active.push([v, dot]); }
+  active.sort((a, b) => b[0] - a[0]);
+  const gap = gapFor(day);
+  const notice = document.getElementById("notice");
+  notice.style.display = gap ? "block" : "none";
+  if (gap) notice.innerHTML = `<b>Incomplete week.</b> No trip records are available for ${fmtRange(gap)}, so this 7-day window undercounts.`;
+  document.getElementById("s-total").textContent = fmtK(DATA.total[day]) + (gap ? "*" : "");
+  document.getElementById("s-active").textContent = fmtInt(active.length);
+  const tb = document.getElementById("top");
+  tb.innerHTML = active.slice(0, 10).map(([v, d]) =>
+    `<tr><td class="name">${escapeHtml(d.name)}</td><td class="num">${fmtInt(v)}</td><td class="num">${fmtPct(v / DATA.total[day])}</td></tr>`
+  ).join("");
+  const dd = dayDate(day);
+  document.getElementById("date").innerHTML =
+    `${fmtDate(day)}<small>7 days ending ${dd.toLocaleDateString("en-CA", { weekday: "long", timeZone: "UTC" })}</small>`;
+}
+function escapeHtml(s) { return s.replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+
+// ---------- strip chart ----------
+const strip = document.getElementById("strip");
+const sctx = strip.getContext("2d");
+let SW = 0, SH = 0;
+const SP = { l: 44, r: 8, t: 8, b: 22 };
+const smax = Math.max(...DATA.total);
+const sx = d => SP.l + (SW - SP.l - SP.r) * d / (NDAYS - 1);
+const sy = v => SH - SP.b - (SH - SP.t - SP.b) * v / smax;
+let stripHover = null;
+function niceStep(max, n) { const raw = max / n, p = 10 ** Math.floor(Math.log10(raw)); return [1, 2, 2.5, 5, 10].map(m => m * p).find(s => s >= raw); }
+function drawStrip() {
+  sctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  sctx.clearRect(0, 0, SW, SH);
+  sctx.font = "11px system-ui, -apple-system, 'Segoe UI', sans-serif";
+  sctx.fillStyle = css("--muted");
+  // y grid
+  const step = niceStep(smax, 3);
+  sctx.strokeStyle = css("--grid"); sctx.lineWidth = 1;
+  sctx.textAlign = "right"; sctx.textBaseline = "middle";
+  for (let v = 0; v <= smax; v += step) {
+    const y = Math.round(sy(v)) + 0.5;
+    sctx.beginPath(); sctx.moveTo(SP.l, y); sctx.lineTo(SW - SP.r, y); sctx.stroke();
+    sctx.fillText(fmtK(v), SP.l - 6, y);
+  }
+  // x ticks: Jan 1 each year
+  sctx.textAlign = "center"; sctx.textBaseline = "top";
+  const y0 = dayDate(0).getUTCFullYear(), y1 = dayDate(NDAYS - 1).getUTCFullYear();
+  let lastX = -Infinity;
+  for (let y = y0; y <= y1; y++) {
+    const d = Math.round((Date.UTC(y, 0, 1) - T0) / 86400000);
+    if (d < 0) continue;
+    const x = sx(d);
+    sctx.strokeStyle = css("--axis");
+    sctx.beginPath(); sctx.moveTo(Math.round(x) + 0.5, SH - SP.b); sctx.lineTo(Math.round(x) + 0.5, SH - SP.b + 4); sctx.stroke();
+    if (x - lastX > 34) { sctx.fillText(String(y), x, SH - SP.b + 6); lastX = x; }
+  }
+  // missing-data bands: hatched, labelled, and the series breaks across them
+  for (const [a, b] of DATA.gaps) {
+    const x0 = sx(a), x1 = sx(b + 1);
+    sctx.save();
+    sctx.beginPath(); sctx.rect(x0, SP.t, x1 - x0, SH - SP.b - SP.t); sctx.clip();
+    sctx.strokeStyle = css("--axis"); sctx.lineWidth = 1;
+    for (let x = x0 - (SH); x < x1; x += 5) { sctx.beginPath(); sctx.moveTo(x, SH - SP.b); sctx.lineTo(x + SH, SP.t - SH + SH); sctx.stroke(); }
+    sctx.restore();
+    sctx.fillStyle = css("--muted"); sctx.textAlign = "center"; sctx.textBaseline = "bottom";
+    sctx.fillText("no data", (x0 + x1) / 2, SP.t + 12);
+  }
+  // area + line, as segments between gaps
+  const segs = [];
+  let seg = null;
+  for (let d = 0; d < NDAYS; d++) {
+    if (gapFor(d)) { if (seg) { segs.push(seg); seg = null; } continue; }
+    (seg = seg || []).push(d);
+  }
+  if (seg) segs.push(seg);
+  for (const s of segs) {
+    sctx.beginPath();
+    sctx.moveTo(sx(s[0]), sy(0));
+    for (const d of s) sctx.lineTo(sx(d), sy(DATA.total[d]));
+    sctx.lineTo(sx(s[s.length - 1]), sy(0));
+    sctx.closePath();
+    sctx.fillStyle = css("--series-1-wash"); sctx.fill();
+    sctx.beginPath();
+    s.forEach((d, i) => i ? sctx.lineTo(sx(d), sy(DATA.total[d])) : sctx.moveTo(sx(d), sy(DATA.total[d])));
+    sctx.strokeStyle = css("--series-1"); sctx.lineWidth = 2; sctx.lineJoin = "round"; sctx.stroke();
+  }
+  // baseline
+  sctx.strokeStyle = css("--axis"); sctx.lineWidth = 1;
+  sctx.beginPath(); sctx.moveTo(SP.l, Math.round(sy(0)) + 0.5); sctx.lineTo(SW - SP.r, Math.round(sy(0)) + 0.5); sctx.stroke();
+  // current-day cursor
+  const cx = Math.round(sx(day)) + 0.5;
+  sctx.strokeStyle = css("--ink"); sctx.lineWidth = 1.5;
+  sctx.beginPath(); sctx.moveTo(cx, SP.t); sctx.lineTo(cx, SH - SP.b); sctx.stroke();
+  sctx.fillStyle = css("--series-1");
+  sctx.beginPath(); sctx.arc(cx, sy(DATA.total[day]), 4, 0, 2 * Math.PI); sctx.fill();
+  sctx.strokeStyle = css("--surface"); sctx.lineWidth = 2; sctx.stroke();
+  // hover crosshair
+  if (stripHover !== null && stripHover !== day) {
+    const hx = Math.round(sx(stripHover)) + 0.5;
+    sctx.strokeStyle = css("--axis"); sctx.lineWidth = 1; sctx.setLineDash([3, 3]);
+    sctx.beginPath(); sctx.moveTo(hx, SP.t); sctx.lineTo(hx, SH - SP.b); sctx.stroke();
+    sctx.setLineDash([]);
+  }
+}
+
+// ---------- render loop ----------
+let baseK = 1;
+function resize() {
+  DPR = window.devicePixelRatio || 1;
+  const r = map.getBoundingClientRect();
+  const keepCenter = W ? [(W / 2 - view.tx) / view.k, (H / 2 - view.ty) / view.k] : null;
+  W = r.width; H = r.height;
+  map.width = Math.round(W * DPR); map.height = Math.round(H * DPR);
+  const sr = strip.getBoundingClientRect();
+  SW = sr.width; SH = sr.height;
+  strip.width = Math.round(SW * DPR); strip.height = Math.round(SH * DPR);
+  const prevK = view.k;
+  fitView(); baseK = view.k;
+  if (keepCenter && prevK !== baseK) {
+    view.k = prevK; view.tx = W / 2 - prevK * keepCenter[0]; view.ty = H / 2 - prevK * keepCenter[1];
+  }
+  render();
+}
+function render() { drawMap(); drawStrip(); drawSide(); }
+function setDay(d) { day = Math.max(0, Math.min(NDAYS - 1, Math.round(d))); render(); }
+
+// playback
+let playing = false, last = 0, acc = 0;
+const playBtn = document.getElementById("play");
+function setPlaying(p) {
+  playing = p;
+  playBtn.textContent = p ? "❚❚ Pause" : "▶ Play";
+  playBtn.setAttribute("aria-label", p ? "Pause" : "Play");
+  if (p) { if (day >= NDAYS - 1) day = 0; last = performance.now(); acc = day; requestAnimationFrame(tick); }
+}
+function tick(now) {
+  if (!playing) return;
+  const rate = +document.getElementById("speed").value;
+  acc += rate * (now - last) / 1000; last = now;
+  if (acc >= NDAYS - 1) { setDay(NDAYS - 1); setPlaying(false); return; }
+  if (Math.floor(acc) !== day) setDay(Math.floor(acc));
+  requestAnimationFrame(tick);
+}
+playBtn.onclick = () => setPlaying(!playing);
+
+// mode toggle
+for (const [id, m] of [["mode-count", "count"], ["mode-share", "share"]]) {
+  document.getElementById(id).onclick = () => {
+    mode = m;
+    document.getElementById("mode-count").setAttribute("aria-pressed", m === "count");
+    document.getElementById("mode-share").setAttribute("aria-pressed", m === "share");
+    drawLegend(); render();
+  };
+}
+
+// keyboard: arrows step a day, shift+arrows a week, space plays
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "SELECT") return;
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+    setPlaying(false);
+    setDay(day + (e.key === "ArrowRight" ? 1 : -1) * (e.shiftKey ? 7 : 1));
+    e.preventDefault();
+  } else if (e.key === " " && e.target.tagName !== "BUTTON") { setPlaying(!playing); e.preventDefault(); }
+});
+
+// strip: click/drag to scrub, hover for value
+const stripTip = document.getElementById("strip-tip");
+const dayFromStrip = e => {
+  const r = strip.getBoundingClientRect();
+  return Math.round((e.clientX - r.left - SP.l) / (SW - SP.l - SP.r) * (NDAYS - 1));
+};
+let scrubbing = false;
+strip.addEventListener("pointerdown", e => { scrubbing = true; strip.setPointerCapture(e.pointerId); setPlaying(false); setDay(dayFromStrip(e)); });
+strip.addEventListener("pointerup", () => { scrubbing = false; });
+strip.addEventListener("pointermove", e => {
+  const d = Math.max(0, Math.min(NDAYS - 1, dayFromStrip(e)));
+  if (scrubbing) setDay(d);
+  stripHover = d; drawStrip();
+  const r = strip.getBoundingClientRect(), pr = strip.parentElement.getBoundingClientRect();
+  stripTip.innerHTML = `<b>${fmtDate(d)}</b>` + (gapFor(d)
+    ? `<div class="row"><span>Incomplete: no trip records for ${fmtRange(gapFor(d))}</span></div>`
+    : `<div class="row"><span>Trip starts + ends, 7 days</span><span>${fmtInt(DATA.total[d])}</span></div>`);
+  stripTip.style.display = "block";
+  const x = e.clientX - pr.left, w = stripTip.offsetWidth;
+  stripTip.style.left = Math.min(pr.width - w - 8, Math.max(8, x + 12)) + "px";
+  stripTip.style.top = (r.top - pr.top + 4) + "px";
+});
+strip.addEventListener("pointerleave", () => { stripHover = null; stripTip.style.display = "none"; drawStrip(); });
+
+// map: hover tooltip, drag to pan, wheel/buttons to zoom
+const tip = document.getElementById("tip");
+let drag = null;
+map.addEventListener("pointerdown", e => { drag = { x: e.clientX, y: e.clientY, tx: view.tx, ty: view.ty }; map.setPointerCapture(e.pointerId); map.classList.add("dragging"); tip.style.display = "none"; });
+map.addEventListener("pointerup", () => { drag = null; map.classList.remove("dragging"); });
+map.addEventListener("pointermove", e => {
+  const r = map.getBoundingClientRect(), mx = e.clientX - r.left, my = e.clientY - r.top;
+  if (drag) { view.tx = drag.tx + e.clientX - drag.x; view.ty = drag.ty + e.clientY - drag.y; drawMap(); return; }
+  let best = null, bd = Infinity;
+  for (const s of screenDots) {
+    const d = Math.hypot(s.x - mx, s.y - my);
+    if (d < Math.max(8, s.r + 4) && d <= bd) { best = s; bd = d; }
+  }
+  if (!best) { tip.style.display = "none"; return; }
+  const v = valueAt(best.dot, day);
+  tip.innerHTML = `<b>${escapeHtml(best.dot.name)}</b>` +
+    `<div class="row"><span>Trip starts + ends, 7 days</span><span>${fmtInt(v)}</span></div>` +
+    `<div class="row"><span>Share of system</span><span>${fmtPct(v / DATA.total[day])}</span></div>` +
+    `<div class="row"><span>Station ID</span><span>${best.dot.id}</span></div>`;
+  tip.style.display = "block";
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  tip.style.left = Math.min(W - w - 8, mx + 14) + "px";
+  tip.style.top = (my + 14 + h > H ? my - h - 10 : my + 14) + "px";
+});
+map.addEventListener("pointerleave", () => { tip.style.display = "none"; });
+function zoomAt(f, cx = W / 2, cy = H / 2) {
+  const k = Math.min(baseK * 40, Math.max(baseK * 0.6, view.k * f));
+  view.tx = cx - (cx - view.tx) * k / view.k; view.ty = cy - (cy - view.ty) * k / view.k; view.k = k;
+  drawMap();
+}
+map.addEventListener("wheel", e => {
+  e.preventDefault();
+  const r = map.getBoundingClientRect();
+  zoomAt(Math.exp(-e.deltaY * 0.0015), e.clientX - r.left, e.clientY - r.top);
+}, { passive: false });
+document.getElementById("zin").onclick = () => zoomAt(1.6);
+document.getElementById("zout").onclick = () => zoomAt(1 / 1.6);
+document.getElementById("zfit").onclick = () => { fitView(); drawMap(); };
+
+// theme changes repaint with the dark-mode ramp
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { setRamp(); drawLegend(); render(); });
+new MutationObserver(() => { setRamp(); drawLegend(); render(); })
+  .observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+window.addEventListener("resize", resize);
+if (DATA.gaps.length) {
+  document.getElementById("gap-note").textContent = `No trip records are available for ${DATA.gaps.map(fmtRange).join("; ")}. Frames whose 7-day window overlaps that period are marked incomplete and excluded from the colour scale's range.`;
+} else {
+  document.getElementById("gap-note").remove();
+}
+// Deep link: #date=2019-07-15&mode=share
+const hashParams = new URLSearchParams(location.hash.slice(1));
+if (hashParams.get("date")) {
+  const t = Date.parse(hashParams.get("date") + "T00:00:00Z");
+  if (!isNaN(t)) day = Math.max(0, Math.min(NDAYS - 1, Math.round((t - T0) / 86400000)));
+}
+if (hashParams.get("mode") === "share") document.getElementById("mode-share").click();
+setRamp();
+drawLegend();
+resize();
+// Deep link: #center=43.635,-79.38&zoom=6 (zoom is relative to the default view)
+if (hashParams.get("center")) {
+  const [lat, lon] = hashParams.get("center").split(",").map(Number);
+  const k = baseK * (+hashParams.get("zoom") || 1);
+  view = { k, tx: W / 2 - k * lon * KX, ty: H / 2 - k * -lat };
+  drawMap();
+}
+</script>
+</body>
+</html>

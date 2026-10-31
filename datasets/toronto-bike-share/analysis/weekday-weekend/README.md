@@ -43,7 +43,7 @@ Run analyze.py to populate.
 ## Caveats (required)
 
 - 2016 data starts in July; months before that are absent, not zero.
-- 2026 data is partial (year-to-date at time of snapshot).
+- 2026 data is partial (Jan–Sep, from the 2026-10-30 re-snapshot in `raw/2026-10-30/`).
 - 2020 ridership was severely affected by COVID-19 lockdowns; comparisons across that period should be interpreted carefully.
 - `avg_daily_trips` divides by the number of distinct calendar days in the group (weekday vs weekend days in that month), so months with missing days (e.g. partial data at start/end of year) will undercount.
 - No weather or holiday adjustments; weekday ridership on statutory holidays is classified as weekday but behaves more like weekend.
